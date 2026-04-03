@@ -13,5 +13,10 @@
       "evenement": "Mise à l'eau officielle",
       "info": "Ouverture du port et drink de bienvenue au club-house."
     }
+  ],
+  "tarifs": [
+    { "type": "INDIVIDUEL", "prix": "70€", "desc": "Accès annuel complet." },
+    { "type": "FAMILLE", "prix": "110€", "desc": "Couples et enfants." },
+    { "type": "JUNIOR", "prix": "40€", "desc": "Moins de 18 ans." }
   ]
 }
