@@ -3,12 +3,14 @@
 :root {
     --royal-blue: #002349;
     --gold: #EAB308;
+    --slate: #f8fafc;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f8fafc;
+    background-color: var(--slate);
     margin: 0;
+    color: #1e293b;
 }
 
 .font-royal {
@@ -16,33 +18,57 @@ body {
 }
 
 /* Navigation */
-nav {
+.nav-rcnhc {
     background-color: var(--royal-blue);
-    color: white;
-    padding: 1rem 2rem;
     border-bottom: 3px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    margin-right: 1rem; /* Espace entre logo et texte */
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 11px;
-    font-weight: bold;
+    font-[11px];
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-left: 1.5rem;
+    transition: 0.3s;
 }
 
-nav a:hover, nav a.active {
+.nav-links a:hover, .nav-links a.active {
     color: var(--gold);
 }
 
-/* Style des cartes */
-.card {
+/* Cartes */
+.card-royal {
     background: white;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border-top: 8px solid var(--gold);
-    margin-bottom: 20px;
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-top: 6px solid var(--gold);
+    transition: transform 0.3s ease;
+}
+
+.card-royal:hover {
+    transform: translateY(-5px);
 }
