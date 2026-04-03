@@ -8,10 +8,11 @@
     <style>
         .font-royal { font-family: 'Playfair Display', serif; }
         .nav-link { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
-        .card-royal { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 6px solid #EAB308; }
+        .card-royal { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 6px solid #EAB308; transition: 0.3s; }
+        .card-royal:hover { transform: translateY(-5px); }
     </style>
 </head>
-<body class="bg-slate-50 font-['Inter']">
+<body class="bg-slate-50 font-['Inter'] text-slate-800">
     <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-6 md:px-10">
         <div class="flex items-center">
             <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 rounded-full border border-yellow-500 mr-4">
@@ -30,14 +31,27 @@
         </div>
     </nav>
 
-    <header class="bg-[#002349] py-16 text-center text-white">
-        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Nos Tarifs</h1>
+    <header class="bg-[#002349] py-16 text-center text-white border-b border-yellow-600/20">
+        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Cotisations 2026</h1>
+        <p class="text-xs italic tracking-[0.3em] mt-2 opacity-70">Rejoignez le Royal Centre Nautique</p>
     </header>
 
-    <main class="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
-        <div class="card-royal text-center"><h3 class="font-royal text-lg">Individuel</h3><p class="text-4xl font-bold text-[#002349] my-4">70€</p></div>
-        <div class="card-royal text-center bg-[#002349] text-white border-yellow-500 scale-105"><h3 class="font-royal text-lg text-yellow-500">Famille</h3><p class="text-4xl font-bold my-4">110€</p></div>
-        <div class="card-royal text-center"><h3 class="font-royal text-lg">Junior</h3><p class="text-4xl font-bold text-[#002349] my-4">40€</p></div>
+    <main class="container mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+        <div class="card-royal text-center">
+            <h3 class="text-xs font-bold text-yellow-600 uppercase tracking-widest mb-4">Membre Individuel</h3>
+            <p class="text-5xl font-bold text-[#002349] mb-4">70€</p>
+            <p class="text-slate-500 text-sm italic">Accès complet aux installations.</p>
+        </div>
+        <div class="card-royal text-center bg-[#002349] text-white border-yellow-500 scale-105 shadow-2xl">
+            <h3 class="text-xs font-bold text-yellow-500 uppercase tracking-widest mb-4">Membre Famille</h3>
+            <p class="text-5xl font-bold mb-4">110€</p>
+            <p class="opacity-70 text-sm italic">Pour les couples et enfants à charge.</p>
+        </div>
+        <div class="card-royal text-center">
+            <h3 class="text-xs font-bold text-yellow-600 uppercase tracking-widest mb-4">Membre Junior</h3>
+            <p class="text-5xl font-bold text-[#002349] mb-4">40€</p>
+            <p class="text-slate-500 text-sm italic">Moins de 18 ans.</p>
+        </div>
     </main>
 </body>
 </html>
