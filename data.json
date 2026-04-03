@@ -13,6 +13,12 @@
       "evenement": "Mise à l'eau officielle",
       "info": "Ouverture du port et drink de bienvenue au club-house."
     }
+     {
+      "date": "15",
+      "mois": "AVRIL",
+      "evenement": "Mise à l'eau officielle",
+      "info": "Ouverture du port et drink de bienvenue au club-house."
+    }
   ],
   "tarifs": [
     { "type": "INDIVIDUEL", "prix": "70€", "desc": "Accès annuel complet." },
