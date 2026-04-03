@@ -3,20 +3,46 @@
 :root {
     --royal-blue: #002349;
     --gold: #EAB308;
-    --slate: #f8fafc;
 }
 
-body { font-family: 'Inter', sans-serif; background-color: var(--slate); margin: 0; color: #334155; }
-.font-royal { font-family: 'Playfair Display', serif; }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+}
+
+.font-royal {
+    font-family: 'Playfair Display', serif;
+}
 
 /* Navigation */
-.nav-rcnhc { background: var(--royal-blue); color: white; padding: 1.5rem; sticky: top; z-index: 50; border-bottom: 3px solid var(--gold); }
-.nav-rcnhc a { color: white; text-decoration: none; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; padding-bottom: 5px; }
-.nav-rcnhc a:hover { color: var(--gold); }
-.nav-rcnhc .active { border-bottom: 2px solid var(--gold); color: var(--gold); }
+nav {
+    background-color: var(--royal-blue);
+    color: white;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid var(--gold);
+}
 
-/* Cartes et Sections */
-.card-royal { background: white; border-radius: 1.5rem; padding: 2.5rem; shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-top: 6px solid var(--gold); transition: 0.3s; }
-.card-royal:hover { transform: translateY(-5px); }
-.btn-gold { background: var(--gold); color: white; padding: 0.75rem 1.5rem; border-radius: 9999px; font-weight: bold; text-decoration: none; display: inline-block; transition: 0.3s; }
-.btn-gold:hover { background: #ca8a04; }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover, nav a.active {
+    color: var(--gold);
+}
+
+/* Style des cartes */
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 8px solid var(--gold);
+    margin-bottom: 20px;
+}
