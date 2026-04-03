@@ -1,59 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCNHC - Le Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 font-['Inter'] text-slate-800">
-    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
-        <div class="flex items-center space-x-2">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_3.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs font-semibold italic">RCNHC</h1>
+<body>
+    <nav class="nav-rcnhc">
+        <div class="nav-logo-container">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="nav-logo-img">
+            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</span>
         </div>
-        <div class="flex gap-6">
-            <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
-    <div class="flex items-center space-x-2">
-        <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-        <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
-    </div>
-    <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
-        <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
-        <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
-        <a href="ecole.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
-        <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
-        <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
-        <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
-        <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
-        <a href="contact.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
-    </div>
-</nav>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="club.html" class="active">Le Club</a>
+            <a href="ecole.html">Ecole</a>
+            <a href="activites.html">Activités</a>
+            <a href="tarif.html">Tarifs</a>
+            <a href="news.html">News</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="contact.html">Contacts</a>
         </div>
     </nav>
+
     <main class="container mx-auto px-6 py-16 max-w-5xl">
-        <h2 class="text-4xl font-royal text-[#002349] mb-12 text-center uppercase tracking-widest">Le Club</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <section class="card-royal">
-                <h3 class="text-2xl font-royal text-[#002349] mb-6 tracking-wide">Devenir Membre</h3>
-                <p class="text-sm text-slate-500 mb-8 leading-relaxed">
-                    Le RCNHC Hesbaye-Condroz (A.S.B.L.) accueille les propriétaires de bateaux et les amateurs de voile dans une ambiance conviviale. L'admission de nouveaux membres se fait sur présentation et parrainage.
-                </p>
-                <a href="contact.html" class="inline-block bg-[#002349] text-yellow-500 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-[0.2em] hover:bg-yellow-600 hover:text-white transition shadow-lg">Introduire une demande</a>
-            </section>
-            <section>
-                <h3 class="text-2xl font-royal text-[#002349] mb-8 tracking-wide border-l-4 border-yellow-500 pl-4 uppercase text-sm font-semibold italic italic">Administration</h3>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100"><span class="text-xs uppercase text-slate-400 font-bold tracking-widest">Président</span><span class="font-bold text-[#002349]">M. Jacques DUMONT</span></div>
-                    <div class="flex justify-between items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100"><span class="text-xs uppercase text-slate-400 font-bold tracking-widest">Vice-Président</span><span class="font-bold text-[#002349]">M. Marc LALOUX</span></div>
-                    <div class="flex justify-between items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100"><span class="text-xs uppercase text-slate-400 font-bold tracking-widest">Secrétaire</span><span class="font-bold text-[#002349]">M. Pierre VAN HECKE</span></div>
-                    <div class="flex justify-between items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100"><span class="text-xs uppercase text-slate-400 font-bold tracking-widest">Trésorier</span><span class="font-bold text-[#002349]">M. Michel LECLERCQ</span></div>
-                </div>
-            </section>
+        <h2 class="text-4xl font-royal text-[#002349] text-center mb-16 uppercase tracking-widest">Le Comité</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="card-royal">
+                <h3 class="text-xs font-bold text-yellow-600 uppercase mb-4 tracking-widest">Présidence</h3>
+                <p class="text-xl font-bold text-[#002349]">Jacques DUMONT</p>
+                <p class="text-slate-400 text-sm italic mt-2">Président du RCNHC</p>
+            </div>
+            <div class="card-royal">
+                <h3 class="text-xs font-bold text-yellow-600 uppercase mb-4 tracking-widest">Secrétariat</h3>
+                <p class="text-xl font-bold text-[#002349]">Pierre VAN HECKE</p>
+                <p class="text-slate-400 text-sm italic mt-2">Gestion administrative</p>
+            </div>
         </div>
     </main>
-    <footer class="bg-[#002349] text-slate-500 py-10 text-center text-[10px] tracking-widest uppercase">
-        &copy; 2026 RCNHC Wanze - Tous droits réservés
-    </footer>
 </body>
 </html>
