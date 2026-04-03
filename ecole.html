@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-slate-50 font-['Inter']">
+
     <nav class="bg-[#002349] p-4 flex items-center px-10 border-b border-yellow-600/30 sticky top-0 z-50">
         <div class="flex items-center">
             <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 mr-4 rounded-full border border-yellow-500">
@@ -24,19 +25,62 @@
                 </div>
             </div>
             <a href="ecole.html" class="nav-link text-yellow-500">Ecole</a>
-            <a href="activites.html" class="nav-link">Activités</a>
+            <a href="news.html" class="nav-link">Actualités</a>
+            <a href="album.html" class="nav-link">Photos</a>
             <a href="contact.html" class="nav-link">Contacts</a>
         </div>
     </nav>
 
-    <header class="bg-[#002349] py-16 text-center text-white">
-        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Apprendre la Voile</h1>
-        <p class="text-[10px] italic tracking-[0.3em] mt-2 opacity-70 uppercase">Stages et formations tous niveaux</p>
+    <header class="bg-[#002349] py-16 text-center text-white border-b border-yellow-600/20">
+        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Ecole de Voile</h1>
+        <p class="text-[10px] italic tracking-[0.3em] mt-2 opacity-70 uppercase">Apprendre, naviguer et partager</p>
     </header>
 
     <main class="container mx-auto px-6 py-16 max-w-5xl">
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div>
-                <h2 class="text-3xl font-royal text-[#002349] mb-6">Stages d'été</h2>
-                <p class="text-slate-600 leading-relaxed mb-6">
-                    Chaque été, nous organisons des stages d'initiation et de perfectionnement pour les enfants (dès 8 ans) et les adolescents. Encadrés par des moniteurs bre
+                <h2 class="text-3xl font-royal text-[#002349] mb-6 border-b-2 border-yellow-500 pb-2 inline-block">L'esprit de l'école</h2>
+                <p class="text-lg text-slate-700 leading-relaxed italic mb-6">
+                    "Gréer un bateau, le mettre à l'eau, hisser les voiles, s'initier au matelotage et à la barre, naviguer, glisser sur l'eau, faire de nouvelles connaissances et créer des amitiés !"
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    C'est ce que nous proposons aux jeunes de <strong>10 à 16 ans</strong> pendant une semaine, en été, ainsi qu’à toute personne intéressée tout au long de la saison.
+                </p>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl border-8 border-white rotate-2">
+                <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_ece2f9.png" alt="Ecole de voile" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="card-royal bg-[#002349] text-white">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="bg-yellow-500 text-[#002349] p-6 rounded-xl font-black text-center min-w-[150px]">
+                    <span class="block text-4xl">ÉTÉ</span>
+                    <span class="block text-xl uppercase tracking-widest">2025</span>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-royal text-yellow-500 mb-4 uppercase">Stage d'été</h2>
+                    <p class="text-slate-200 leading-relaxed mb-4">
+                        Nous organisons notre stage d'été en collaboration avec <strong>l'asbl Vive le Sport</strong> de la Commune de Wanze.
+                    </p>
+                    <p class="text-slate-300">
+                        Durant ce stage, nous proposons aux jeunes de 10 à 16 ans une semaine de découverte sur nos voiliers d'écolage aux côtés d'autres stagiaires.
+                    </p>
+                    <div class="mt-8">
+                        <a href="contact.html" class="inline-block bg-yellow-500 text-[#002349] font-bold py-3 px-8 rounded-full uppercase text-xs tracking-widest hover:bg-white transition">
+                            Plus d'infos & Inscription
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-[#002349] text-slate-500 py-10 text-center text-[10px] tracking-widest uppercase mt-20 border-t border-yellow-600/10">
+        © 2026 RCNHC Wanze - Tous droits réservés
+    </footer>
+
+</body>
+</html>
