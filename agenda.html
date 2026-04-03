@@ -1,1 +1,37 @@
-<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Events Calendar</title>\n    <style>\n        body { font-family: Arial, sans-serif; }\n        .event { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }\n        .event-date { font-weight: bold; }\n    </style>\n</head>\n<body>\n    <h1>Events Calendar</h1>\n    <div class=\"event\">\n        <div class=\"event-date\">April 15, 2026</div>\n        <div class=\"event-title\">Opening Event</div>\n        <div class=\"event-description\">Join us for the grand opening on April 15, 2026, with various exciting activities and guest speakers!</div>\n    </div>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCNHC - Agenda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-rcnhc">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold uppercase text-xs font-semibold italic">RCNHC</h1></div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="index.html">Accueil</a>
+                <a href="club.html">Le club</a>
+                <a href="ecole.html">Ecole de voile</a>
+                <a href="activites.html">Activités</a>
+                <a href="news.html">News</a>
+                <a href="agenda.html" class="active">Agenda</a>
+                <a href="album.html">Photos</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto px-6 py-16 max-w-3xl">
+        <h2 class="text-4xl font-royal text-[#002349] mb-12 text-center uppercase tracking-widest">Calendrier 2026</h2>
+        <div class="space-y-4">
+            <div class="flex items-center bg-white p-6 rounded-2xl shadow-md border-l-8 border-yellow-500">
+                <div class="text-center w-20 border-r border-slate-100 pr-4">
+                    <span class="block text-2xl font-bold text-[#002349]">15</span><span class="text-[10px] uppercase text-slate-400 font-bold tracking-widest underline">AVRIL</span>
+                </div>
+                <div class="pl-6"><h4 class="font-bold text-[#002349]">Ouverture officielle du port</h4><p class="text-xs text-slate-500 italic italic">Mise à l'eau et cocktail présidentiel.</p></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
