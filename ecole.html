@@ -2,44 +2,33 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCNHC - Ecole de voile</title>
+    <title>RCNHC - Ecole de Voile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav-rcnhc">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold uppercase text-xs font-semibold italic">RCNHC</h1></div>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="index.html">Accueil</a>
-                <a href="club.html">Le club</a>
-                <a href="ecole.html" class="active">Ecole de voile</a>
-                <a href="activites.html">Activités</a>
-                <a href="news.html">News</a>
-                <a href="agenda.html">Agenda</a>
-                <a href="album.html">Photos</a>
-                <a href="contact.html">Contacts</a>
-            </div>
-        </div>
+    <nav class="nav-rcnhc flex justify-between items-center px-10">
+        <div class="flex items-center gap-2"><span class="text-xl">👑</span><span class="font-royal text-yellow-500 font-bold">RCNHC</span></div>
+        <div class="flex gap-6"><a href="index.html">Accueil</a><a href="club.html">Le Club</a><a href="ecole.html" class="active">Ecole de Voile</a><a href="activites.html">Activités</a><a href="contact.html">Contacts</a></div>
     </nav>
-    <main class="container mx-auto px-6 py-16 max-w-5xl">
-        <div class="card-royal overflow-hidden p-0">
-            <div class="bg-[#002349] p-12 text-white">
-                <h2 class="text-4xl font-royal text-yellow-500 mb-6 uppercase tracking-widest">Stages "Vive le Sport"</h2>
-                <p class="text-lg opacity-80 mb-8 italic italic">L'initiation à la voile pour les jeunes de 7 à 16 ans au cœur de Wanze.</p>
-            </div>
-            <div class="p-12 grid md:grid-cols-2 gap-10">
-                <div>
-                    <h4 class="font-bold text-[#002349] mb-4 uppercase tracking-widest text-xs font-semibold italic underline">Programme 2026</h4>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Nos stages d'été encadrés par des moniteurs FFYB permettent aux enfants de découvrir les plaisirs de l'eau en toute sécurité sur dériveur (Optimist, Laser).</p>
-                    <ul class="text-sm space-y-2 text-slate-500"><li>📌 Horaires : 09h00 - 17h00</li><li>📌 Matériel : Fourni par le club</li></ul>
+
+    <main class="container mx-auto px-6 py-16 text-center max-w-4xl">
+        <div class="card-royal p-12">
+            <h2 class="text-3xl font-royal text-[#002349] mb-8">INITIATION À LA VOILE</h2>
+            <p class="text-slate-600 mb-8 leading-relaxed">
+                Le club propose chaque été des stages de voile dans le cadre de l'opération <strong>"Vive le Sport"</strong>, en collaboration avec la commune de Wanze.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 text-left text-sm mb-8">
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                    <h4 class="font-bold text-[#002349] mb-2 uppercase">Public</h4>
+                    <p>Jeunes filles et garçons de 7 à 16 ans.</p>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-2xl border-2 border-dashed border-slate-200 text-center">
-                    <p class="text-sm font-bold text-[#002349] mb-4">Inscriptions & Tarifs</p>
-                    <p class="text-xs text-slate-500 mb-6 italic italic">Les dates des stages 2026 seront publiées prochainement. Restez connectés !</p>
-                    <a href="contact.html" class="btn-gold uppercase text-xs tracking-widest">Se renseigner</a>
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                    <h4 class="font-bold text-[#002349] mb-2 uppercase">Encadrement</h4>
+                    <p>Moniteurs brevetés (FFYB) et initiation sur Optimist ou dériveurs.</p>
                 </div>
             </div>
+            <p class="text-xs text-slate-400 font-bold">CONTACTER LE SECRÉTARIAT POUR LES MODALITÉS D'INSCRIPTION</p>
         </div>
     </main>
 </body>
