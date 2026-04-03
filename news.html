@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCNHC - News</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="bg-[#002349] text-white p-4 shadow-xl flex justify-between items-center px-10 border-b border-yellow-600/30">
-        <div class="flex items-center space-x-2">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_3.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
+    <nav class="nav-rcnhc">
+        <div class="nav-logo-container">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="nav-logo-img">
+            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</span>
         </div>
-        <div class="flex gap-6">
-            <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
-    <div class="flex items-center space-x-2">
-        <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-        <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
-    </div>
-    <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
-        <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
-        <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
-        <a href="ecole.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
-        <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
-        <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
-        <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
-        <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
-        <a href="contact.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
-    </div>
-</nav>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="club.html">Le Club</a>
+            <a href="ecole.html">Ecole</a>
+            <a href="activites.html">Activités</a>
+            <a href="tarif.html">Tarifs</a>
+            <a href="news.html" class="active">News</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="contact.html">Contacts</a>
         </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-16 max-w-4xl">
-        <h2 class="text-3xl font-royal text-[#002349] text-center mb-12 uppercase tracking-widest">Actualités</h2>
-        <div id="container-news" class="space-y-8">
-            </div>
-    </main>
+    <main class="container mx-auto px-6 py-16 max-w-4xl" id="news-list">
+        <h2 class="text-4xl font-royal text-[#002349] text-center mb-16 uppercase tracking-widest">Actualités</h2>
+        </main>
 
     <script>
         fetch('data.json').then(r => r.json()).then(data => {
-            const div = document.getElementById('container-news');
+            const container = document.getElementById('news-list');
             data.news.forEach(item => {
-                div.innerHTML += `
-                    <article class="bg-white rounded-3xl shadow-xl border-t-8 border-yellow-600 p-8">
-                        <span class="text-[10px] font-bold text-yellow-600 uppercase tracking-widest italic">${item.date}</span>
+                container.innerHTML += `
+                    <div class="card-royal mb-8 text-left">
+                        <span class="text-[10px] font-bold text-yellow-600 uppercase tracking-widest">${item.date}</span>
                         <h3 class="text-2xl font-royal text-[#002349] mt-2 mb-4 uppercase underline">${item.titre}</h3>
-                        <p class="text-slate-600 leading-relaxed text-sm">${item.texte}</p>
-                    </article>`;
+                        <p class="text-slate-600 text-sm leading-relaxed">${item.texte}</p>
+                    </div>`;
             });
         });
     </script>
