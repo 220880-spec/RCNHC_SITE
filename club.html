@@ -1,57 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCNHC - Devenir Membre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCNHC - Le Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         .font-royal { font-family: 'Playfair Display', serif; }
-        .nav-link { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
-        .card-royal { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 6px solid #EAB308; }
+        .nav-link { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; color: white; }
+        .nav-link:hover { color: #EAB308; }
+        .card-royal { background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 6px solid #EAB308; }
     </style>
 </head>
+<body class="bg-slate-50 font-['Inter'] text-slate-800">
 
-<body class="bg-slate-50 font-['Inter']">
-
-    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-6 md:px-10">
-        <div class="flex items-center">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 rounded-full border border-yellow-500 mr-4">
-            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
+    <nav class="bg-[#002349] p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex items-center px-6 md:px-10">
+        <div class="flex items-center flex-shrink-0">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" 
+                 style="height: 45px; width: 45px; object-fit: contain;" 
+                 class="rounded-full border border-yellow-500 mr-4">
+            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-sm italic">RCNHC</span>
         </div>
-        <div class="flex flex-wrap gap-4 justify-end">
-            <a href="index.html" class="nav-link hover:text-yellow-500 text-white">Accueil</a>
+        <div class="flex-grow"></div>
+        <div class="flex flex-wrap gap-6 justify-end items-center">
+            <a href="index.html" class="nav-link">Accueil</a>
             <a href="club.html" class="nav-link text-yellow-500">Le Club</a>
-            <a href="contact.html" class="nav-link hover:text-yellow-500 text-white">Contacts</a>
-        </div>
-    </nav>
-
-    <header class="bg-[#002349] py-16 text-center text-white">
-        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Rejoignez-nous</h1>
-    </header>
-
-    <main class="container mx-auto px-6 py-12 max-w-4xl">
-        
-        <div class="card-royal">
-            <h2 class="text-2xl font-royal text-[#002349] mb-6 uppercase tracking-widest border-b border-slate-100 pb-4">Devenir membre</h2>
-            
-            <p class="text-lg font-semibold italic text-[#002349] mb-4">Toi aussi tu veux devenir membre du CNHC ?</p>
-            
-            <ul class="space-y-3 mb-8 text-slate-600">
-                <li class="flex items-center"><span class="text-yellow-500 mr-3">⚓</span> Tu es passionné de sports nautiques</li>
-                <li class="flex items-center"><span class="text-yellow-500 mr-3">⛵</span> Tu veux découvrir un nouveau sport sympa et atypique</li>
-                <li class="flex items-center"><span class="text-yellow-500 mr-3">🤝</span> Tu veux partager cette passion dans une ambiance familiale et chaleureuse ?</li>
-            </ul>
-
-            <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-yellow-500">
-                <p class="font-bold text-[#002349] mb-3 uppercase tracking-tighter">Alors deviens membre dès aujourd’hui !</p>
-                <p class="text-sm leading-relaxed text-slate-500 italic">
-                    Pour ce faire, rien de plus simple, nous t’invitons à nous rendre visite lors de l’ouverture du club le dimanche ou lors de nos évènements. Sinon, tu peux aussi télécharger et compléter la demande d’adhésion jointe et la renvoyer au secrétariat.
-                </p>
-            </div>
-        </div>
-
-    </main>
-
-</body>
-</html>
+            <a href="ecole.html" class="nav-link">Ecole</a>
+            <a href="activites.html" class="nav-link">Activités</a>
+            <a href="tarif
