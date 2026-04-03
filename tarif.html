@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="style.css">
-<script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCNHC - Tarifs</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>.font-royal { font-family: 'Playfair Display', serif; }</style>
 </head>
 <body class="bg-slate-50 font-['Inter']">
-    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30">
-        <div class="container mx-auto flex justify-between items-center"><div class="flex items-center space-x-2"><span class="text-2xl">👑</span><h1 class="text-xl font-royal tracking-widest uppercase text-yellow-500 font-bold">RCNHC WANZE</h1></div><div class="flex space-x-6 text-xs font-semibold tracking-widest uppercase"><a href="index.html" class="hover:text-yellow-500">Accueil</a><a href="activites.html" class="hover:text-yellow-500">Activités</a><a href="tarifs.html" class="text-yellow-500 border-b-2 border-yellow-500">Tarifs</a><a href="contact.html" class="hover:text-yellow-500">Contacts</a></div></div>
+
+    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
+        <div class="flex items-center space-x-2">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
+            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
+        </div>
+        <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
+            <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
+            <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
+            <a href="ecole.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
+            <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
+            <a href="tarif.html" class="text-yellow-500 border-b border-yellow-500 pb-1 text-[11px] font-semibold tracking-widest uppercase">Tarifs</a>
+            <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
+            <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
+            <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
+            <a href="contact.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
+        </div>
     </nav>
+
     <header class="bg-[#002349] py-16 text-center text-white border-b border-yellow-600/30">
-        <h1 class="text-4xl font-royal text-yellow-500 uppercase">Tarifs & Adhésion</h1>
+        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Tarifs & Adhésion</h1>
+        <p class="text-slate-400 mt-4 italic">Rejoignez le Royal Centre Nautique Hesbaye-Condroz</p>
     </header>
+
     <main class="container mx-auto px-6 py-16">
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 text-center hover:border-yellow-600 transition shadow-xl">
-                <h3 class="font-royal text-xl mb-4">Individuel</h3>
-                <p class="text-4xl font-bold text-[#002349] mb-6">70€<span class="text-sm text-slate-400">/an</span></p>
-                <ul class="text-slate-500 text-sm space-y-3 mb-8"><li>Assurance FFYB</li><li>Accès infrastructures</li></ul>
-                <a href="contact.html" class="block bg-[#002349] text-white py-2 rounded font-bold uppercase text-xs hover:bg-yellow-600">S'inscrire</a>
+            
+            <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 text-center hover:border-yellow-600 transition shadow-xl flex flex-col">
+                <h3 class="font-royal text-xl mb-4 text-[#002349] uppercase">Individuel</h3>
+                <p class="text-5xl font-bold text-[#002349] mb-6">70€<span class="text-sm text-slate-400 font-normal">/an</span></p>
+                <ul class="text-slate-500 text-sm space-y-3 mb-8 flex-grow">
+                    <li class="flex items-center justify-center gap-2">✅ Assurance FFYB</li>
+                    <li class="flex items-center justify-center gap-2">✅ Accès infrastructures</li>
+                </ul>
+                <a href="contact.html" class="block bg-[#002349] text-yellow-500 py-3 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-yellow-600 hover:text-white transition">S'inscrire</a>
             </div>
-            <div class="bg-[#002349] border-4 border-yellow-600 rounded-2xl p-8 text-center scale-105 shadow-2xl text-white">
-                <h3 class="font-royal text-xl mb-4 text-yellow-500">Famille</h3>
-                <p class="text-4xl font-bold mb-6">110€<span class="text-sm opacity-50">/an</span></p>
-                <ul class="text-slate-300 text-sm space-y-3 mb-8"><li>2 Adultes + Enfants</li><li>Assurances incluses</li></ul>
-                <a href="contact.html" class="block bg-yellow-600 text-white py-2 rounded font-bold uppercase text-xs hover:bg-yellow-700">Le choix Royal</a>
+
+            <div class="bg-[#002349] border-4 border-yellow-600 rounded-3xl p-8 text-center scale-105 shadow-2xl text-white flex flex-col">
+                <div class="bg-yellow-600 text-white text-[10px] font-bold uppercase py-1 px-3 rounded-full self-center mb-4 tracking-tighter">Le choix Royal</div>
+                <h3 class="font-royal text-xl mb-4 text-yellow-500 uppercase">Famille</h3>
+                <p class="text-5xl font-bold mb-6 text-white">110€<span class="text-sm opacity-50 font-normal">/an</span></p>
+                <ul class="text-slate-300 text-sm space-y-3 mb-8 flex-grow">
+                    <li class="flex items-center justify-center gap-2">✅ 2 Adultes + Enfants</li>
+                    <li class="flex items-center justify-center gap-2">✅ Assurances incluses</li>
+                    <li class="flex items-center justify-center gap-2">✅ Convivialité garantie</li>
+                </ul>
+                <a href="contact.html" class="block bg-yellow-600 text-white py-4 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-yellow-700 transition">Nous rejoindre</a>
             </div>
-            <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 text-center hover:border-yellow-600 transition shadow-xl">
-                <h3 class="font-royal text-xl mb-4">Junior (-25 ans)</h3>
-                <p class="text-4xl font-bold text-[#002349] mb-6">40€<span class="text-sm text-slate-400">/an</span></p>
-                <ul class="text-slate-500 text-sm space-y-3 mb-8"><li>Tarif réduit</li><li>Accès complet</li></ul>
-                <a href="contact.html" class="block bg-[#002349] text-white py-2 rounded font-bold uppercase text-xs hover:bg-yellow-600">S'inscrire</a>
+
+            <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 text-center hover:border-yellow-600 transition shadow-xl flex flex-col">
+                <h3 class="font-royal text-xl mb-4 text-[#002349] uppercase">Junior (-25 ans)</h3>
+                <p class="text-5xl font-bold text-[#002349] mb-6">40€<span class="text-sm text-slate-400 font-normal">/an</span></p>
+                <ul class="text-slate-500 text-sm space-y-3 mb-8 flex-grow">
+                    <li class="flex items-center justify-center gap-2">✅ Tarif réduit</li>
+                    <li class="flex items-center justify-center gap-2">✅ Accès complet</li>
+                </ul>
+                <a href="contact.html" class="block bg-[#002349] text-yellow-500 py-3 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-yellow-600 hover:text-white transition">S'inscrire</a>
             </div>
+
         </div>
+
+        <p class="text-center mt-12 text-slate-400 text-xs italic">
+            * Les cotisations sont annuelles et valables pour la saison en cours. Pour le grutage et l'hivernage, veuillez nous contacter directement.
+        </p>
     </main>
+
+    <footer class="bg-[#002349] text-slate-500 py-10 text-center text-[10px] tracking-widest uppercase">
+        &copy; 2026 RCNHC Wanze - Tous droits réservés
+    </footer>
 </body>
 </html>
