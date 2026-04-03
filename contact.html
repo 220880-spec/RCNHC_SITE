@@ -10,17 +10,39 @@
 </head>
 <body class="bg-slate-50 font-['Inter']">
     <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30">
-        <div class="container mx-auto flex justify-between items-center"><div class="flex items-center space-x-2"><span class="text-2xl">👑</span><h1 class="text-xl font-royal tracking-widest uppercase text-yellow-500 font-bold">RCNHC WANZE</h1></div><div class="flex space-x-6 text-xs font-semibold tracking-widest uppercase"><a href="index.html" class="hover:text-yellow-500">Accueil</a><a href="activites.html" class="hover:text-yellow-500">Activités</a><a href="tarifs.html" class="hover:text-yellow-500">Tarifs</a><a href="contact.html" class="text-yellow-500 border-b-2 border-yellow-500">Contacts</a></div></div>
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-[11px] font-semibold tracking-widest uppercase">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-yellow-500 font-bold">RCNHC WANZE</h1></div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="index.html" class="hover:text-yellow-500">Accueil</a>
+                <a href="club.html" class="hover:text-yellow-500">Le club</a>
+                <a href="ecole.html" class="hover:text-yellow-500">Ecole de voile</a>
+                <a href="activites.html" class="hover:text-yellow-500">Activités</a>
+                <a href="news.html" class="hover:text-yellow-500">News</a>
+                <a href="agenda.html" class="hover:text-yellow-500">Agenda</a>
+                <a href="album.html" class="hover:text-yellow-500">Photos</a>
+                <a href="contact.html" class="text-yellow-500 border-b border-yellow-500 pb-1">Contacts</a>
+            </div>
+        </div>
     </nav>
-    <main class="container mx-auto px-6 py-12 max-w-4xl">
-        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row border border-slate-100">
             <div class="bg-[#002349] text-white p-10 md:w-1/2">
                 <h3 class="text-2xl font-royal text-yellow-500 mb-6">Localisation</h3>
                 <p class="text-sm leading-loose">Rue Alphonse Libert<br>4520 Wanze, Belgique</p>
-                <p class="mt-8 text-xs font-bold uppercase text-yellow-500">Permanence Dimanche</p>
-                <p class="text-sm opacity-80 italic">10h00 - 18h00</p>
+                <div class="mt-8 pt-6 border-t border-white/10">
+                    <p class="text-[10px] uppercase font-bold text-yellow-600 mb-2">Email</p>
+                    <a href="mailto:info@rcnhcwanze.be" class="text-lg font-bold">info@rcnhcwanze.be</a>
+                </div>
             </div>
-            <div class="p-10 md:w-1/2"><h3 class="text-2xl font-royal text-[#002349] mb-6">Contact Direct</h3><p class="text-sm text-slate-500 mb-6">Une question ? Contactez-nous :</p><a href="mailto:info@rcnhcwanze.be" class="text-xl font-bold text-yellow-600 hover:text-[#002349] underline">info@rcnhcwanze.be</a></div>
+            <div class="p-10 md:w-1/2">
+                <h3 class="text-2xl font-royal text-[#002349] mb-6 tracking-wide">Permanences</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6 italic italic">Nous vous accueillons au club-house chaque dimanche de 10h à 18h pendant la saison de navigation.</p>
+                <div class="bg-slate-50 p-6 rounded-xl border-2 border-dashed border-slate-200 text-center">
+                    <p class="text-xs text-slate-400 uppercase font-bold">Accès portuaire</p>
+                    <p class="text-xs text-slate-400 uppercase">Rive gauche - Meuse</p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
