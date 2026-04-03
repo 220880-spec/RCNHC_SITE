@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>RCNHC - Activités & News</title>
+    <title>RCNHC - Actualités & Agenda</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <a href="ecole.html" class="nav-link">Ecole</a>
-            <a href="activites.html" class="nav-link text-yellow-500">Activités</a>
+            <a href="news.html" class="nav-link text-yellow-500">Actualités</a>
             <a href="album.html" class="nav-link">Photos</a>
             <a href="contact.html" class="nav-link">Contacts</a>
         </div>
@@ -33,14 +33,14 @@
 
     <header class="bg-[#002349] py-16 text-center text-white border-b border-yellow-600/20">
         <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Vie du Club</h1>
-        <p class="text-[10px] italic tracking-[0.3em] mt-2 opacity-70 uppercase">Agenda & Dernières Nouvelles</p>
+        <p class="text-[10px] italic tracking-[0.3em] mt-2 opacity-70 uppercase">Annonces et Calendrier 2025</p>
     </header>
 
-    <main class="container mx-auto px-6 py-16 max-w-6xl">
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
         <div class="grid md:grid-cols-3 gap-12">
             
             <div class="md:col-span-1">
-                <h2 class="text-xl font-royal text-[#002349] mb-8 uppercase border-b-2 border-yellow-500 pb-2 inline-block text-center">Agenda</h2>
+                <h2 class="text-xl font-royal text-[#002349] mb-8 uppercase border-b-2 border-yellow-500 pb-2 inline-block">Agenda</h2>
                 <div id="agenda-container" class="space-y-4">
                     </div>
             </div>
@@ -55,13 +55,35 @@
     </main>
 
     <script>
-        // On récupère les infos dans data.json (ton fichier GitHub)
+        // Chargement des données depuis data.json
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
-                // On remplit l'Agenda
+                // Remplissage de l'Agenda
                 const agendaBox = document.getElementById('agenda-container');
                 agendaBox.innerHTML = data.agenda.map(item => `
-                    <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-yellow-500 hover:translate-x-2 transition-transform">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-yellow-500">
                         <div class="flex items-baseline gap-2">
-                            <span class="text-2xl font-bold text-[#002349]">${item.date}</span>
+                            <span class="text-xl font-bold text-[#002349]">${item.date}</span>
+                            <span class="text-[10px] font-bold text-yellow-600 uppercase">${item.mois}</span>
+                        </div>
+                        <h4 class="font-bold text-sm mt-1 uppercase">${item.evenement}</h4>
+                        <p class="text-xs text-slate-500 mt-1">${item.info}</p>
+                    </div>
+                `).join('');
+
+                // Remplissage des News
+                const newsBox = document.getElementById('news-container');
+                newsBox.innerHTML = data.news.map(item => `
+                    <article class="card-royal">
+                        <span class="text-yellow-600 font-bold text-[10px] uppercase tracking-widest">${item.date}</span>
+                        <h3 class="text-2xl font-royal text-[#002349] mt-2">${item.titre}</h3>
+                        <p class="text-slate-600 mt-4 leading-relaxed">${item.texte}</p>
+                    </article>
+                `).join('');
+            })
+            .catch(err => console.error("Erreur de chargement JSON:", err));
+    </script>
+
+</body>
+</html>
