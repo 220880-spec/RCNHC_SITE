@@ -12,22 +12,34 @@
     </style>
 </head>
 <body class="bg-slate-50 font-['Inter']">
-    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-6 md:px-10">
-        <div class="flex items-center">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 rounded-full border border-yellow-500 mr-4">
-            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
+    <nav class="bg-[#002349] p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex items-center px-6 md:px-10">
+    <div class="flex items-center flex-shrink-0">
+        <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" 
+             style="height: 45px; width: 45px; object-fit: contain;" 
+             class="rounded-full border border-yellow-500 mr-4">
+        <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-sm italic">RCNHC</span>
+    </div>
+
+    <div class="flex-grow"></div>
+
+    <div class="flex flex-wrap gap-6 justify-end items-center">
+        <a href="index.html" class="nav-link">Accueil</a>
+        
+        <div class="dropdown">
+            <a href="club.html" class="nav-link">Le Club ▼</a>
+            <div class="dropdown-content">
+                <a href="club.html#devenir-membre" class="dropdown-item">Devenir Membre & Tarifs</a>
+                <a href="club.html#comite" class="dropdown-item">Membres du CA</a>
+            </div>
         </div>
-        <div class="flex flex-wrap gap-4 justify-end">
-            <a href="index.html" class="nav-link hover:text-yellow-500 text-white">Accueil</a>
-            <a href="club.html" class="nav-link hover:text-yellow-500 text-white">Le Club</a>
-            <a href="ecole.html" class="nav-link hover:text-yellow-500 text-white">Ecole</a>
-            <a href="activites.html" class="nav-link hover:text-yellow-500 text-white">Activités</a>
-            <a href="tarif.html" class="nav-link hover:text-yellow-500 text-white">Tarifs</a>
-            <a href="news.html" class="nav-link text-yellow-500">News</a>
-            <a href="agenda.html" class="nav-link hover:text-yellow-500 text-white">Agenda</a>
-            <a href="album.html" class="nav-link hover:text-yellow-500 text-white">Photos</a>
-            <a href="contact.html" class="nav-link hover:text-yellow-500 text-white">Contacts</a>
-        </div>
+
+        <a href="ecole.html" class="nav-link">Ecole</a>
+        <a href="activites.html" class="nav-link">Activités</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="agenda.html" class="nav-link">Agenda</a>
+        <a href="contact.html" class="nav-link">Contacts</a>
+    </div>
+</nav>
     </nav>
 
     <main class="container mx-auto px-6 py-16 max-w-4xl" id="news-container">
