@@ -3,44 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCNHC - Royal Centre Nautique Hesbaye Condroz</title>
+    <title>RCNHC - Accueil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="nav-rcnhc">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-2xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold tracking-widest uppercase">RCNHC WANZE</h1></div>
-            <div class="flex flex-wrap justify-center gap-6">
-               <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
-    <div class="flex items-center space-x-2">
-        <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-        <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
-    </div>
-    <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
-        <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
-        <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
-        <a href="ecole.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
-        <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
-        <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
-        <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
-        <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
-        <a href="contact.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
-    </div>
-</nav>
-            </div>
+        <div class="nav-logo-container">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="nav-logo-img">
+            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="club.html">Le Club</a>
+            <a href="ecole.html">Ecole</a>
+            <a href="activites.html">Activités</a>
+            <a href="tarif.html">Tarifs</a>
+            <a href="news.html">News</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="contact.html">Contacts</a>
         </div>
     </nav>
-    <header class="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
-        <img src="https://images.unsplash.com/photo-1540946484627-41400263858f?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-50">
-        <div class="relative z-10 px-4">
-            <h2 class="text-5xl md:text-7xl font-royal mb-4 italic">Royal Centre Nautique</h2>
-            <p class="text-xl text-yellow-500 uppercase tracking-[0.4em] font-bold">Hesbaye Condroz</p>
-        </div>
+
+    <header class="bg-[#002349] py-24 text-center border-b border-yellow-600/30">
+        <h1 class="text-5xl font-royal text-yellow-500 uppercase tracking-[0.3em] mb-4">Royal Centre Nautique</h1>
+        <p class="text-white italic tracking-widest text-sm uppercase">Hesbaye - Condroz | Wanze</p>
     </header>
-    <section class="py-20 container mx-auto px-6 text-center max-w-3xl">
-        <h3 class="text-3xl font-royal text-[#002349] mb-6 italic italic">"Le titre Royal au service de la passion nautique."</h3>
-        <p class="text-slate-600 leading-relaxed italic border-l-4 border-yellow-500 pl-6 text-left">Bienvenue sur le nouveau portail officiel du RCNHC. Situé à Wanze, notre club allie tradition maritime et convivialité hesbignonne.</p>
-    </section>
+
+    <main class="container mx-auto px-6 py-16 text-center">
+        <div class="card-royal max-w-3xl mx-auto">
+            <h2 class="text-3xl font-royal text-[#002349] mb-6 uppercase">Bienvenue à Bord</h2>
+            <p class="text-slate-600 leading-relaxed italic">Situé au cœur de la Wallonie, le RCNHC offre un cadre exceptionnel pour tous les passionnés de navigation, de voile et de convivialité.</p>
+        </div>
+    </main>
 </body>
 </html>
