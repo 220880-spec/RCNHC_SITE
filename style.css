@@ -1,74 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+/* TYPOGRAPHIE & BASES */
+.font-royal { font-family: 'Playfair Display', serif; }
+body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
 
-:root {
-    --royal-blue: #002349;
-    --gold: #EAB308;
-    --slate: #f8fafc;
+/* NAVIGATION */
+.nav-link { 
+    font-size: 11px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    transition: 0.3s; 
+    color: white; 
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--slate);
-    margin: 0;
-    color: #1e293b;
-}
+.nav-link:hover { color: #EAB308; }
 
-.font-royal {
-    font-family: 'Playfair Display', serif;
-}
-
-/* Navigation */
-.nav-rcnhc {
-    background-color: var(--royal-blue);
-    border-bottom: 3px solid var(--gold);
-    position: sticky;
-    top: 0;
+/* MENU DÉROULANT (DROPDOWN) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002349;
+    min-width: 220px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
     z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2.5rem;
-    shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(234, 179, 8, 0.2);
+    border-top: 4px solid #EAB308;
+    top: 100%;
+    left: 0;
 }
 
-.nav-logo-container {
-    display: flex;
-    align-items: center;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.nav-logo-img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px solid var(--gold);
-    margin-right: 1rem; /* Espace entre logo et texte */
-}
-
-.nav-links a {
+.dropdown-item {
+    display: block;
+    padding: 12px 20px;
     color: white;
-    text-decoration: none;
-    font-[11px];
-    font-weight: 600;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-left: 1.5rem;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
-.nav-links a:hover, .nav-links a.active {
-    color: var(--gold);
+.dropdown-item:hover {
+    background-color: #003366;
+    color: #EAB308;
+    padding-left: 25px; /* Petit effet au survol */
 }
 
-/* Cartes */
-.card-royal {
-    background: white;
-    border-radius: 24px;
-    padding: 2.5rem;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    border-top: 6px solid var(--gold);
-    transition: transform 0.3s ease;
+/* CARTES ET BLOCS */
+.card-royal { 
+    background: white; 
+    border-radius: 20px; 
+    padding: 2.5rem; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+    border-top: 6px solid #EAB308; 
 }
 
-.card-royal:hover {
-    transform: translateY(-5px);
+.price-tag { 
+    color: #002349; 
+    font-weight: 800; 
+    font-size: 2.5rem; 
 }
