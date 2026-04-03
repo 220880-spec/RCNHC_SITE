@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCNHC - Actualités</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-<script src="https://cdn.tailwindcss.com"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club News</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Club News</h1>
-    </header>
-    <main>
-        <article>
-            <h2>Club Becomes Royal!</h2>
-            <p>Date: March 2026</p>
-            <p>We are thrilled to announce that our club has officially been granted royal status! This prestigious recognition marks a significant chapter in our history and we look forward to serving our community with even greater enthusiasm and commitment.</p>
-            <p>The journey to this moment has been a remarkable one. Our members have worked tirelessly to promote excellence and sportsmanship, making this accomplishment possible. We would like to extend our heartfelt gratitude to everyone involved in this endeavor.</p>
-            <p>Thank you for your continued support!</p>
+    <nav class="nav-rcnhc">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold uppercase text-xs font-semibold italic">RCNHC</h1></div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="index.html">Accueil</a>
+                <a href="club.html">Le club</a>
+                <a href="ecole.html">Ecole de voile</a>
+                <a href="activites.html">Activités</a>
+                <a href="news.html" class="active">News</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="album.html">Photos</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <h2 class="text-4xl font-royal text-[#002349] mb-12 text-center uppercase tracking-widest">Dernières Actualités</h2>
+        <article class="card-royal mb-8">
+            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest italic uppercase">Avril 2026</span>
+            <h3 class="text-2xl font-royal text-[#002349] mt-2 mb-4 uppercase text-sm font-semibold italic">Lancement de la saison "Royale"</h3>
+            <p class="text-slate-600 leading-relaxed text-sm">Suite à l'obtention du titre Royal, le club inaugure ses nouveaux pontons et prépare un calendrier d'événements exceptionnels pour cet été.</p>
         </article>
     </main>
-    <footer>
-        <p>&copy; 2026 Club Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>
