@@ -2,12 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>RCNHC - Activités</title>
+    <title>RCNHC - Activités & News</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-slate-50 font-['Inter']">
+
     <nav class="bg-[#002349] p-4 flex items-center px-10 border-b border-yellow-600/30 sticky top-0 z-50">
         <div class="flex items-center">
             <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 mr-4 rounded-full border border-yellow-500">
@@ -25,29 +26,42 @@
             </div>
             <a href="ecole.html" class="nav-link">Ecole</a>
             <a href="activites.html" class="nav-link text-yellow-500">Activités</a>
+            <a href="album.html" class="nav-link">Photos</a>
             <a href="contact.html" class="nav-link">Contacts</a>
         </div>
     </nav>
 
-    <header class="bg-[#002349] py-16 text-center text-white">
+    <header class="bg-[#002349] py-16 text-center text-white border-b border-yellow-600/20">
         <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Vie du Club</h1>
+        <p class="text-[10px] italic tracking-[0.3em] mt-2 opacity-70 uppercase">Agenda & Dernières Nouvelles</p>
     </header>
 
-    <main class="container mx-auto px-6 py-16 max-w-5xl">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="card-royal">
-                <h3 class="font-royal text-xl mb-3">Navigation Libre</h3>
-                <p class="text-sm text-slate-500">Tous les dimanches d'avril à octobre, les membres se retrouvent pour naviguer ensemble.</p>
+    <main class="container mx-auto px-6 py-16 max-w-6xl">
+        <div class="grid md:grid-cols-3 gap-12">
+            
+            <div class="md:col-span-1">
+                <h2 class="text-xl font-royal text-[#002349] mb-8 uppercase border-b-2 border-yellow-500 pb-2 inline-block text-center">Agenda</h2>
+                <div id="agenda-container" class="space-y-4">
+                    </div>
             </div>
-            <div class="card-royal">
-                <h3 class="font-royal text-xl mb-3">Régates</h3>
-                <p class="text-sm text-slate-500">Organisation de manches amicales et participation au calendrier fédéral.</p>
+
+            <div class="md:col-span-2">
+                <h2 class="text-xl font-royal text-[#002349] mb-8 uppercase border-b-2 border-yellow-500 pb-2 inline-block">Dernières News</h2>
+                <div id="news-container" class="space-y-8">
+                    </div>
             </div>
-            <div class="card-royal">
-                <h3 class="font-royal text-xl mb-3">Evénements</h3>
-                <p class="text-sm text-slate-500">Barbecues, fêtes de club et journées "portes ouvertes".</p>
-            </div>
+
         </div>
     </main>
-</body>
-</html>
+
+    <script>
+        // On récupère les infos dans data.json (ton fichier GitHub)
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // On remplit l'Agenda
+                const agendaBox = document.getElementById('agenda-container');
+                agendaBox.innerHTML = data.agenda.map(item => `
+                    <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-yellow-500 hover:translate-x-2 transition-transform">
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-2xl font-bold text-[#002349]">${item.date}</span>
