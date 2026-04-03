@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCNHC - Photos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-slate-50 font-['Inter']">
+
     <nav class="nav-rcnhc">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold uppercase text-xs font-semibold italic">RCNHC</h1></div>
-            <div class="flex flex-wrap justify-center gap-6">
-               <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
-    <div class="flex items-center space-x-2">
-        <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-        <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
-    </div>
-    <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
-        <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
-        <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
-        <a href="ecole.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
-        <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
-        <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
-        <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
-        <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
-        <a href="contact.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
-    </div>
-</nav>
-            </div>
+        <div class="nav-logo-block">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="nav-logo-img">
+            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-sm italic">RCNHC</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="club.html">Le Club</a>
+            <a href="ecole.html">Ecole</a>
+            <a href="activites.html">Activités</a>
+            <a href="tarif.html">Tarifs</a>
+            <a href="news.html">News</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="album.html" class="active">Photos</a>
+            <a href="contact.html">Contacts</a>
         </div>
     </nav>
+
+    <header class="bg-[#002349] py-16 text-center text-white border-b border-yellow-600/30">
+        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Album Photos</h1>
+        <p class="text-slate-400 mt-4 italic uppercase text-[10px] tracking-[0.3em]">Souvenirs du Royal Centre Nautique</p>
+    </header>
+
     <main class="container mx-auto px-6 py-16">
-        <h2 class="text-4xl font-royal text-[#002349] mb-12 text-center uppercase tracking-widest underline">Galerie Souvenirs</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 1</div>
-            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 2</div>
-            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 3</div>
-            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 4</div>
-        </div>
-    </main>
-</body>
-</html>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="card-royal p-2 overflow-hidden">
+                <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Photo Club" class="w-full h-64 object-cover rounded-xl mb-4">
+                <h3 class="text-[#002349] font-bold uppercase text-xs tracking-widest italic px-4 pb-2">Le Port de Wanze</h3>
+            </div>
+
+            <div class="card-royal p-2 overflow-hidden">
+                <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Photo Club" class="w-full h-64 object-cover rounded-xl mb-4 opacity-50">
+                <h3 class="text-[#002349] font-bold uppercase text-xs tracking-widest italic px-4 pb-2">Régate Annuelle</h3>
+            </div>
+
+            <div class="card-royal p-2 overflow-hidden">
+                <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Photo Club" class="w-full h-64 object-cover rounded-xl mb-4 opacity-50">
+                <h
