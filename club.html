@@ -3,56 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCNHC - Le Club</title>
+    <title>RCNHC - Devenir Membre</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        .font-royal { font-family: 'Playfair Display', serif; }
-        .nav-link { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; color: white; }
-        .nav-link:hover { color: #EAB308; }
-        
-        /* Style pour le menu déroulant */
-        .dropdown { position: relative; display: inline-block; }
-        .dropdown-content {
-            display: none; position: absolute; background-color: #002349;
-            min-width: 220px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 100;
-            border: 1px solid rgba(234, 179, 8, 0.3); border-top: 3px solid #EAB308;
-            top: 100%; left: 0;
-        }
-        .dropdown:hover .dropdown-content { display: block; }
-        .dropdown-item {
-            color: white; padding: 12px 16px; text-decoration: none; display: block;
-            font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
-        }
-        .dropdown-item:hover { background-color: #003366; color: #EAB308; }
-
-        .card-royal { background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 6px solid #EAB308; }
-        .price-tag { color: #002349; font-weight: 800; font-size: 2.5rem; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-50 font-['Inter'] text-slate-800 leading-relaxed">
 
     <nav class="bg-[#002349] p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex items-center px-6 md:px-10">
         <div class="flex items-center flex-shrink-0">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" 
-                 style="height: 45px; width: 45px; object-fit: contain;" 
-                 class="rounded-full border border-yellow-500 mr-4">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" style="height: 45px; width: 45px; object-fit: contain;" class="rounded-full border border-yellow-500 mr-4">
             <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-sm italic">RCNHC</span>
         </div>
-        
         <div class="flex-grow"></div>
-
         <div class="flex flex-wrap gap-6 justify-end items-center">
             <a href="index.html" class="nav-link">Accueil</a>
-            
             <div class="dropdown">
-                <a href="club.html" class="nav-link text-yellow-500">Le Club ▼</a>
+                <a href="#" class="nav-link text-yellow-500">Le Club ▼</a>
                 <div class="dropdown-content">
-                    <a href="club.html#devenir-membre" class="dropdown-item">Devenir Membre & Tarifs</a>
-                    <a href="club.html#comite" class="dropdown-item">Membres du CA</a>
+                    <a href="devenir-membre.html" class="dropdown-item">Devenir Membre & Tarifs</a>
+                    <a href="comite.html" class="dropdown-item">Membres du CA</a>
                 </div>
             </div>
-
             <a href="ecole.html" class="nav-link">Ecole</a>
             <a href="activites.html" class="nav-link">Activités</a>
             <a href="news.html" class="nav-link">News</a>
@@ -63,73 +35,49 @@
     </nav>
 
     <header class="bg-[#002349] py-16 text-center text-white border-b border-yellow-600/20">
-        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Espace Membres</h1>
-        <p class="text-[10px] italic tracking-[0.3em] mt-2 opacity-70 uppercase">Inscriptions 2025 & Administration</p>
+        <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Adhésion 2025</h1>
+        <p class="text-[10px] italic tracking-[0.3em] mt-2 opacity-70 uppercase">Rejoignez notre club familial</p>
     </header>
 
-    <main class="container mx-auto px-6 py-16 max-w-5xl space-y-20">
-
-        <section id="devenir-membre" class="scroll-mt-24">
-            <div class="card-royal">
-                <h2 class="text-3xl font-royal text-[#002349] mb-8 uppercase tracking-widest border-b pb-4">Devenir Membre & Cotisations 2025</h2>
-                
-                <div class="grid md:grid-cols-2 gap-12 mb-12">
-                    <div class="space-y-4">
-                        <p class="text-lg font-semibold italic text-[#002349]">Toi aussi tu veux rejoindre le CNHC ?</p>
-                        <p class="text-sm text-slate-600">Rends-nous visite le dimanche d'avril à octobre ou contacte-nous par mail. Tu peux déjà télécharger la fiche d'affiliation officielle ci-dessous.</p>
-                        <a href="https://cnhcwanze.be/gallery/2025%20-%20CNHC%20-%20fiche%20affiliation.docx%201.pdf" target="_blank" class="inline-block bg-[#002349] text-yellow-500 font-bold py-3 px-6 rounded-full border border-yellow-500 uppercase text-[10px] tracking-widest hover:bg-yellow-500 hover:text-[#002349] transition">
-                            📥 Télécharger la fiche d'affiliation
-                        </a>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-yellow-500 text-xs italic text-slate-500 shadow-inner">
-                        La cotisation comprend une <span class="font-bold">licence de navigation de loisir FFYB</span> (convertible gratuitement en licence compétition). Les parents sont membres cotisants pour les mineurs.
-                    </div>
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="card-royal mb-12">
+            <h2 class="text-2xl font-royal text-[#002349] mb-6 uppercase border-b pb-4">Comment nous rejoindre ?</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4 text-slate-600">
+                    <p class="text-lg font-semibold italic text-[#002349]">Toi aussi tu veux devenir membre du CNHC ?</p>
+                    <p>Rends-nous visite le dimanche ou télécharge la fiche ci-dessous. La cotisation inclut la licence FFYB (Loisir ou Compétition).</p>
+                    <a href="https://cnhcwanze.be/gallery/2025%20-%20CNHC%20-%20fiche%20affiliation.docx%201.pdf" target="_blank" class="inline-block bg-[#002349] text-yellow-500 font-bold py-4 px-8 rounded-full border-2 border-yellow-500 uppercase text-[10px] tracking-widest hover:bg-yellow-500 hover:text-[#002349] transition">
+                        📥 Télécharger la fiche d'affiliation
+                    </a>
                 </div>
-
-                <div class="grid md:grid-cols-3 gap-6 pt-8 border-t border-slate-100">
-                    <div class="text-center p-6 bg-slate-50 rounded-2xl">
-                        <h4 class="text-[10px] font-bold uppercase text-yellow-600 mb-2">Individuelle</h4>
-                        <p class="price-tag">70€</p>
-                        <p class="text-[10px] text-slate-400 mt-2 italic">Accès complet infrastructures & bateaux club.</p>
-                    </div>
-                    <div class="text-center p-6 bg-[#002349] text-white rounded-2xl shadow-xl">
-                        <h4 class="text-[10px] font-bold uppercase text-yellow-500 mb-2">Famille</h4>
-                        <p class="price-tag text-white">70€ + 40€</p>
-                        <p class="text-[10px] opacity-70 mt-2 italic">Par personne supplémentaire du même foyer.</p>
-                    </div>
-                    <div class="text-center p-6 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-200">
-                        <h4 class="text-[10px] font-bold uppercase text-yellow-600 mb-2">Option Hangar</h4>
-                        <p class="price-tag">80€</p>
-                        <p class="text-[10px] text-slate-400 mt-2 italic">Emplacement sous réserve de navigation régulière.</p>
-                    </div>
+                <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-yellow-500 text-xs italic text-slate-500 shadow-inner">
+                    "Le membre cotisant pourra demander à devenir membre effectif et participer aux assemblées générales."
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="comite" class="scroll-mt-24">
-            <h2 class="text-center font-royal text-[#002349] text-3xl uppercase tracking-[0.2em] mb-12">Organe d'Administration (C.A.)</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                    <span class="text-yellow-600 text-[10px] font-bold uppercase tracking-widest">Président</span>
-                    <p class="font-royal text-xl text-[#002349] mt-2">Nom Prénom</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                    <span class="text-yellow-600 text-[10px] font-bold uppercase tracking-widest">Secrétaire</span>
-                    <p class="font-royal text-xl text-[#002349] mt-2">Nom Prénom</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                    <span class="text-yellow-600 text-[10px] font-bold uppercase tracking-widest">Trésorier</span>
-                    <p class="font-royal text-xl text-[#002349] mt-2">Nom Prénom</p>
-                </div>
+        <h3 class="text-center font-royal text-[#002349] text-2xl uppercase tracking-widest mb-10">Nos Tarifs</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-yellow-500 text-center">
+                <span class="text-[10px] font-bold text-yellow-600 uppercase">Individuelle</span>
+                <p class="text-4xl font-black text-[#002349] my-4">70€</p>
+                <p class="text-[10px] text-slate-400 italic leading-tight">Accès infrastructures, activités et bateaux du club.</p>
             </div>
-            <p class="text-center text-[10px] text-slate-400 italic mt-8 uppercase">Géré par des bénévoles passionnés depuis 1970</p>
-        </section>
-
+            <div class="bg-[#002349] p-8 rounded-2xl shadow-2xl border-t-4 border-yellow-500 text-center text-white scale-105">
+                <span class="text-[10px] font-bold text-yellow-500 uppercase">Famille</span>
+                <p class="text-4xl font-black my-4 text-white">70€ + 40€</p>
+                <p class="text-[10px] opacity-70 italic leading-tight">Par personne supplémentaire du même foyer.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-yellow-500 text-center">
+                <span class="text-[10px] font-bold text-yellow-600 uppercase">Hangar</span>
+                <p class="text-4xl font-black text-[#002349] my-4">80€</p>
+                <p class="text-[10px] text-slate-400 italic leading-tight">Emplacement pour votre bateau (sous conditions).</p>
+            </div>
+        </div>
     </main>
 
-    <footer class="bg-[#002349] text-slate-500 py-10 text-center text-[10px] tracking-widest uppercase border-t border-yellow-600/10">
-        &copy; 2026 RCNHC Wanze - Tous droits réservés
+    <footer class="bg-[#002349] text-slate-500 py-10 text-center text-[10px] tracking-widest uppercase mt-20">
+        &copy; 2026 RCNHC Wanze
     </footer>
-
 </body>
 </html>
