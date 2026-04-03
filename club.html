@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCNHC - Le Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .font-royal { font-family: 'Playfair Display', serif; }
+        .nav-link { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .card-royal { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 6px solid #EAB308; }
+    </style>
 </head>
-<body>
-    <nav class="nav-rcnhc">
-        <div class="nav-logo-container">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="nav-logo-img">
-            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</span>
+<body class="bg-slate-50 font-['Inter']">
+    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-6 md:px-10">
+        <div class="flex items-center">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 rounded-full border border-yellow-500 mr-4">
+            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
         </div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="club.html" class="active">Le Club</a>
-            <a href="ecole.html">Ecole</a>
-            <a href="activites.html">Activités</a>
-            <a href="tarif.html">Tarifs</a>
-            <a href="news.html">News</a>
-            <a href="agenda.html">Agenda</a>
-            <a href="contact.html">Contacts</a>
+        <div class="flex flex-wrap gap-4 justify-end">
+            <a href="index.html" class="nav-link hover:text-yellow-500 text-white">Accueil</a>
+            <a href="club.html" class="nav-link text-yellow-500">Le Club</a>
+            <a href="ecole.html" class="nav-link hover:text-yellow-500 text-white">Ecole</a>
+            <a href="activites.html" class="nav-link hover:text-yellow-500 text-white">Activités</a>
+            <a href="tarif.html" class="nav-link hover:text-yellow-500 text-white">Tarifs</a>
+            <a href="news.html" class="nav-link hover:text-yellow-500 text-white">News</a>
+            <a href="agenda.html" class="nav-link hover:text-yellow-500 text-white">Agenda</a>
+            <a href="album.html" class="nav-link hover:text-yellow-500 text-white">Photos</a>
+            <a href="contact.html" class="nav-link hover:text-yellow-500 text-white">Contacts</a>
         </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-16 max-w-5xl">
-        <h2 class="text-4xl font-royal text-[#002349] text-center mb-16 uppercase tracking-widest">Le Comité</h2>
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <h2 class="text-3xl font-royal text-[#002349] text-center mb-12 uppercase tracking-widest">Le Comité</h2>
         <div class="grid md:grid-cols-2 gap-8">
-            <div class="card-royal">
-                <h3 class="text-xs font-bold text-yellow-600 uppercase mb-4 tracking-widest">Présidence</h3>
-                <p class="text-xl font-bold text-[#002349]">Jacques DUMONT</p>
-                <p class="text-slate-400 text-sm italic mt-2">Président du RCNHC</p>
+            <div class="card-royal text-center">
+                <h3 class="text-xs font-bold text-yellow-600 uppercase mb-2">Président</h3>
+                <p class="font-bold text-xl text-[#002349]">Jacques DUMONT</p>
             </div>
-            <div class="card-royal">
-                <h3 class="text-xs font-bold text-yellow-600 uppercase mb-4 tracking-widest">Secrétariat</h3>
-                <p class="text-xl font-bold text-[#002349]">Pierre VAN HECKE</p>
-                <p class="text-slate-400 text-sm italic mt-2">Gestion administrative</p>
+            <div class="card-royal text-center">
+                <h3 class="text-xs font-bold text-yellow-600 uppercase mb-2">Secrétaire</h3>
+                <p class="font-bold text-xl text-[#002349]">Pierre VAN HECKE</p>
             </div>
         </div>
     </main>
