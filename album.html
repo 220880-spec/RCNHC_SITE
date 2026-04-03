@@ -1,1 +1,35 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Photo Gallery</title>\n    <link rel="stylesheet" href="styles.css">\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n        }\n        .gallery {\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n            gap: 10px;\n            padding: 10px;\n        }\n        .gallery img {\n            width: 100%;\n            height: auto;\n            border-radius: 5px;\n            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n        }\n        h1 {\n            text-align: center;\n        }\n    </style>\n</head>\n<body>\n    <h1>Photo Gallery</h1>\n    <div class="gallery">\n        <img src="image1.jpg" alt="Photo 1">\n        <img src="image2.jpg" alt="Photo 2">\n        <img src="image3.jpg" alt="Photo 3">\n        <img src="image4.jpg" alt="Photo 4">\n        <img src="image5.jpg" alt="Photo 5">\n        <img src="image6.jpg" alt="Photo 6">\n        <!-- Add more images as needed -->\n    </div>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCNHC - Photos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-rcnhc">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold uppercase text-xs font-semibold italic">RCNHC</h1></div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="index.html">Accueil</a>
+                <a href="club.html">Le club</a>
+                <a href="ecole.html">Ecole de voile</a>
+                <a href="activites.html">Activités</a>
+                <a href="news.html">News</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="album.html" class="active">Photos</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-royal text-[#002349] mb-12 text-center uppercase tracking-widest underline">Galerie Souvenirs</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 1</div>
+            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 2</div>
+            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 3</div>
+            <div class="aspect-square bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 font-bold text-xs uppercase italic italic tracking-widest italic underline italic uppercase">Image 4</div>
+        </div>
+    </main>
+</body>
+</html>
