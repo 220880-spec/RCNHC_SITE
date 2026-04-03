@@ -53,3 +53,22 @@ body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e29
     border-top: 6px solid #EAB308; 
 }
 .price-tag { color: #002349; font-weight: 800; font-size: 2.5rem; }
+/* Force la barre de navigation à être identique partout */
+nav {
+    height: 80px; /* Tu peux ajuster cette hauteur selon tes goûts */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px !important; /* Force les marges latérales */
+}
+
+/* Aligne le logo et le texte RCNHC verticalement */
+nav .flex.items-center {
+    height: 100%;
+}
+
+/* Aligne le groupe de liens à droite */
+nav .flex.gap-6 {
+    height: 100%;
+    align-items: center;
+}
