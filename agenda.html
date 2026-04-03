@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCNHC - Agenda</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 font-['Inter']">
-    <nav class="bg-[#002349] text-white p-4 shadow-xl flex justify-between items-center px-10 border-b border-yellow-600/30">
-        <div class="flex items-center space-x-2">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_3.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
+<body>
+    <nav class="nav-rcnhc">
+        <div class="nav-logo-container">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="nav-logo-img">
+            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</span>
         </div>
-        <div class="flex gap-6">
-           <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
-    <div class="flex items-center space-x-2">
-        <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
-        <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs italic">RCNHC</h1>
-    </div>
-    <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
-        <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
-        <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
-        <a href="ecole.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
-        <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
-        <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
-        <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
-        <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
-        <a href="contact.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
-    </div>
-</nav>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="club.html">Le Club</a>
+            <a href="ecole.html">Ecole</a>
+            <a href="activites.html">Activités</a>
+            <a href="tarif.html">Tarifs</a>
+            <a href="news.html">News</a>
+            <a href="agenda.html" class="active">Agenda</a>
+            <a href="contact.html">Contacts</a>
         </div>
     </nav>
 
     <main class="container mx-auto px-6 py-16 max-w-5xl">
-        <h2 class="text-4xl font-royal text-[#002349] text-center mb-12 uppercase tracking-widest">Calendrier des Activités</h2>
-        
-        <div class="bg-white rounded-3xl shadow-2xl p-4 md:p-8 border-t-8 border-yellow-600 overflow-hidden min-h-[600px] flex items-center justify-center">
-            
-            <div id="placeholder-agenda" class="text-center p-10 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-200 w-full">
-                <div class="text-4xl mb-4 text-slate-300">📅</div>
-                <h3 class="text-lg font-bold text-slate-400 uppercase tracking-widest mb-2">Agenda en cours de configuration</h3>
-                <p class="text-sm text-slate-400 italic">Le calendrier des activités sera bientôt disponible ici.</p>
+        <h2 class="text-4xl font-royal text-[#002349] text-center mb-12 uppercase tracking-widest">Calendrier</h2>
+        <div class="card-royal min-h-[500px] flex items-center justify-center border-2 border-dashed border-slate-200">
+            <div class="text-center">
+                <p class="text-4xl mb-4">📅</p>
+                <p class="text-slate-400 italic">Lien Google Agenda en cours de synchronisation...</p>
             </div>
-
-            </div>
-        
-        <p class="text-center mt-8 text-[10px] text-slate-400 uppercase tracking-widest font-bold">
-            Royal Centre Nautique Hesbaye-Condroz
-        </p>
+        </div>
     </main>
 </body>
 </html>
