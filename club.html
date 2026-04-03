@@ -1,1 +1,88 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Club Page</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <nav>\n            <ul>\n                <li><a href="#home">Home</a></li>\n                <li><a href="#membership">Membership</a></li>\n                <li><a href="#team">Administration Team</a></li>\n                <li><a href="#contact">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    <main>\n        <section id="membership">\n            <h2>Membership</h2>\n            <p>Join our club to enjoy various benefits and participate in exciting events!</p>\n            <form action="#">\n                <label for="name">Name:</label>\n                <input type="text" id="name" name="name" required>\n                <label for="email">Email:</label>\n                <input type="email" id="email" name="email" required>\n                <button type="submit">Join</button>\n            </form>\n        </section>\n        <section id="team">\n            <h2>Administration Team</h2>\n            <ul>\n                <li>John Doe - President</li>\n                <li>Jane Smith - Vice President</li>\n                <li>Mary Johnson - Treasurer</li>\n                <li>James Brown - Secretary</li>\n            </ul>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 Club Name. All Rights Reserved.</p>\n    </footer>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCNHC - Le Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>.font-royal { font-family: 'Playfair Display', serif; }</style>
+</head>
+<body class="bg-slate-50 font-['Inter'] text-slate-800">
+    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-[11px] font-semibold tracking-widest uppercase">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-yellow-500 font-bold">RCNHC WANZE</h1></div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="index.html" class="hover:text-yellow-500">Accueil</a>
+                <a href="club.html" class="text-yellow-500 border-b border-yellow-500 pb-1">Le club</a>
+                <a href="ecole.html" class="hover:text-yellow-500">Ecole de voile</a>
+                <a href="activites.html" class="hover:text-yellow-500">Activités</a>
+                <a href="news.html" class="hover:text-yellow-500">News</a>
+                <a href="agenda.html" class="hover:text-yellow-500">Agenda</a>
+                <a href="album.html" class="hover:text-yellow-500">Photos</a>
+                <a href="contact.html" class="hover:text-yellow-500 font-bold">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-12 border-b border-slate-200">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-royal text-[#002349] uppercase tracking-widest">Le Club</h2>
+            <p class="text-yellow-600 font-bold mt-2 tracking-[0.2em] uppercase text-xs font-semibold italic">Depuis 1964</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-16">
+            
+            <section class="bg-white p-8 rounded-3xl shadow-2xl border-t-8 border-yellow-600">
+                <h3 class="text-2xl font-royal text-[#002349] mb-6 tracking-wide">Devenir Membre</h3>
+                <p class="text-sm text-slate-500 mb-8 leading-relaxed">
+                    Rejoignez notre club pour profiter d'avantages exclusifs et participer à nos événements nautiques tout au long de la saison.
+                </p>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-[10px] uppercase font-bold text-slate-400 mb-1">Nom Complet</label>
+                        <input type="text" placeholder="Ex: John Doe" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase font-bold text-slate-400 mb-1">Email</label>
+                        <input type="email" placeholder="john@example.com" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    </div>
+                    <button type="button" class="w-full bg-[#002349] text-yellow-500 py-3 rounded-lg font-bold uppercase tracking-widest hover:bg-[#00356b] transition duration-300 shadow-lg">Envoyer la demande</button>
+                </form>
+            </section>
+
+            <section>
+                <h3 class="text-2xl font-royal text-[#002349] mb-8 tracking-wide border-l-4 border-yellow-500 pl-4 uppercase text-sm font-semibold italic">Organe d'administration</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-[#002349] font-bold mr-4 italic uppercase tracking-tighter">JD</div>
+                        <div>
+                            <p class="font-bold text-[#002349]">Jacques Dumont</p>
+                            <p class="text-[10px] uppercase text-slate-400 tracking-widest">Président</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-[#002349] font-bold mr-4 italic uppercase tracking-tighter">PV</div>
+                        <div>
+                            <p class="font-bold text-[#002349]">Pierre Van Hecke</p>
+                            <p class="text-[10px] uppercase text-slate-400 tracking-widest">Secrétaire</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-[#002349] font-bold mr-4 italic uppercase tracking-tighter">ML</div>
+                        <div>
+                            <p class="font-bold text-[#002349]">Michel Leclercq</p>
+                            <p class="text-[10px] uppercase text-slate-400 tracking-widest">Trésorier</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#002349] text-slate-500 py-10 text-center text-[10px] tracking-widest uppercase">
+        &copy; 2026 RCNHC Wanze - Tous droits réservés
+    </footer>
+</body>
+</html>
