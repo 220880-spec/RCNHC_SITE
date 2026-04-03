@@ -8,28 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="bg-[#002349] p-4 flex items-center px-10 border-b border-yellow-600/30 sticky top-0 z-50">
-        <div class="flex items-center">
-            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 mr-4 rounded-full border border-yellow-500">
-            <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-sm italic">RCNHC</span>
-        </div>
-        <div class="flex-grow"></div>
-        <div class="flex gap-6 items-center">
-            <a href="index.html" class="nav-link">Accueil</a>
-            <div class="dropdown">
-                <a href="#" class="nav-link">Le Club ▼</a>
-                <div class="dropdown-content">
-                    <a href="devenir-membre.html" class="dropdown-item">Devenir Membre & Tarifs</a>
-                    <a href="comite.html" class="dropdown-item">Membres du CA</a>
-                </div>
+    <nav class="bg-[#002349] p-4 flex items-center px-10 border-b border-yellow-600/30 sticky top-0 z-50 h-[80px]">
+    <div class="flex items-center">
+        <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_dd844a.png" class="h-10 w-10 mr-4 rounded-full border border-yellow-500 object-cover shadow-sm">
+        <span class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-sm italic">RCNHC</span>
+    </div>
+
+    <div class="flex-grow"></div>
+
+    <div class="flex gap-8 items-center h-full">
+        <a href="index.html" class="nav-link" id="nav-index">Accueil</a>
+        
+        <div class="dropdown h-full flex items-center">
+            <a href="#" class="nav-link" id="nav-club">Le Club ▼</a>
+            <div class="dropdown-content">
+                <a href="devenir-membre.html" class="dropdown-item">Devenir Membre & Tarifs</a>
+                <a href="comite.html" class="dropdown-item">Membres du CA</a>
             </div>
-           <a href="ecole.html" class="nav-link">Ecole</a>
-            <a href="agenda.html" class="nav-link">Agenda</a>
-            <a href="news.html" class="nav-link">Actualités</a>
-            <a href="album.html" class="nav-link">Photos</a>
-            <a href="contact.html" class="nav-link">Contacts</a>
         </div>
-    </nav>
+
+        <a href="ecole.html" class="nav-link" id="nav-ecole">Ecole</a>
+        <a href="agenda.html" class="nav-link" id="nav-agenda">Agenda</a>
+        <a href="news.html" class="nav-link" id="nav-news">Actualités</a>
+        <a href="album.html" class="nav-link" id="nav-album">Photos</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contacts</a>
+    </div>
+</nav>
 
     <header class="bg-[#002349] py-16 text-center text-white">
         <h1 class="text-4xl font-royal text-yellow-500 uppercase tracking-widest">Calendrier 2025</h1>
