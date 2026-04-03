@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav-rcnhc">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold uppercase">RCNHC</h1></div>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="index.html">Accueil</a>
-                <a href="club.html">Le club</a>
-                <a href="ecole.html">Ecole de voile</a>
-                <a href="activites.html" class="active">Activités</a>
-                <a href="news.html">News</a>
-                <a href="agenda.html">Agenda</a>
-                <a href="album.html">Photos</a>
-                <a href="contact.html">Contacts</a>
-            </div>
-        </div>
+    <nav class="nav-rcnhc flex justify-between items-center px-10">
+        <div class="flex items-center gap-2"><span class="text-xl">👑</span><span class="font-royal text-yellow-500 font-bold">RCNHC</span></div>
+        <div class="flex gap-6"><a href="index.html">Accueil</a><a href="club.html">Le Club</a><a href="ecole.html">Ecole de Voile</a><a href="activites.html" class="active">Activités</a><a href="contact.html">Contacts</a></div>
     </nav>
+
     <main class="container mx-auto px-6 py-16">
-        <h2 class="text-4xl font-royal text-center text-[#002349] mb-12">NOS SERVICES</h2>
+        <h2 class="text-3xl font-royal text-[#002349] text-center mb-16 uppercase tracking-widest">NOS SERVICES & ACTIVITÉS</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="card-royal text-center"><div class="text-4xl mb-4">⛵</div><h4 class="font-bold mb-2">Voile</h4><p class="text-sm">Dériveurs et catamarans sur bief.</p></div>
-            <div class="card-royal text-center"><div class="text-4xl mb-4">🚤</div><h4 class="font-bold mb-2">Moteur</h4><p class="text-sm">Pontons sécurisés et amarrages.</p></div>
-            <div class="card-royal text-center"><div class="text-4xl mb-4">🏗️</div><h4 class="font-bold mb-2">Hivernage</h4><p class="text-sm">Stockage en hangar fermé.</p></div>
+            <div class="card-royal">
+                <h3 class="font-bold text-[#002349] mb-4 uppercase">NAUTISME</h3>
+                <p class="text-sm text-slate-600">Activités de voile (dériveurs, catamarans) et motonautisme sur les biefs de la Meuse.</p>
+            </div>
+            <div class="card-royal">
+                <h3 class="font-bold text-[#002349] mb-4 uppercase">INFRASTRUCTURE</h3>
+                <p class="text-sm text-slate-600">Pontons sécurisés, eau et électricité disponibles pour les membres. Club-house accessible en saison.</p>
+            </div>
+            <div class="card-royal">
+                <h3 class="font-bold text-[#002349] mb-4 uppercase">HIVERNAGE</h3>
+                <p class="text-sm text-slate-600">Possibilité de stockage des bateaux durant la période hivernale (sous réserve de places disponibles).</p>
+            </div>
         </div>
     </main>
 </body>
