@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sailing School - Vive le Sport 2026</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCNHC - Ecole de voile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Sailing School</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#program">Stage Program</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Our sailing school is dedicated to teaching all ages the joy of sailing. We provide professional instruction and a friendly, safe environment.</p>
-        </section>
-        <section id="program">
-            <h2>Vive le Sport 2026 Stage Program</h2>
-            <p>Join us for an exciting stage program during the Vive le Sport 2026 event, designed for both beginners and experienced sailors.</p>
-            <h3>Stage Details</h3>
-            <ul>
-                <li><strong>Date:</strong> April 10-15, 2026</li>
-                <li><strong>Location:</strong> Waterfront Sailing Center</li>
-                <li><strong>Activities:</strong>
-                    <ul>
-                        <li>Sailing Clinics</li>
-                        <li>Racing Workshops</li>
-                        <li>Family Sailing Events</li>
-                    </ul>
-                </li>
-                <li><strong>Registration Fee:</strong> $150 per person</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For more information, please email us at info@sailingschool.com.</p>
-        </section>
+    <nav class="nav-rcnhc">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold uppercase text-xs font-semibold italic">RCNHC</h1></div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="index.html">Accueil</a>
+                <a href="club.html">Le club</a>
+                <a href="ecole.html" class="active">Ecole de voile</a>
+                <a href="activites.html">Activités</a>
+                <a href="news.html">News</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="album.html">Photos</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="card-royal overflow-hidden p-0">
+            <div class="bg-[#002349] p-12 text-white">
+                <h2 class="text-4xl font-royal text-yellow-500 mb-6 uppercase tracking-widest">Stages "Vive le Sport"</h2>
+                <p class="text-lg opacity-80 mb-8 italic italic">L'initiation à la voile pour les jeunes de 7 à 16 ans au cœur de Wanze.</p>
+            </div>
+            <div class="p-12 grid md:grid-cols-2 gap-10">
+                <div>
+                    <h4 class="font-bold text-[#002349] mb-4 uppercase tracking-widest text-xs font-semibold italic underline">Programme 2026</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Nos stages d'été encadrés par des moniteurs FFYB permettent aux enfants de découvrir les plaisirs de l'eau en toute sécurité sur dériveur (Optimist, Laser).</p>
+                    <ul class="text-sm space-y-2 text-slate-500"><li>📌 Horaires : 09h00 - 17h00</li><li>📌 Matériel : Fourni par le club</li></ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border-2 border-dashed border-slate-200 text-center">
+                    <p class="text-sm font-bold text-[#002349] mb-4">Inscriptions & Tarifs</p>
+                    <p class="text-xs text-slate-500 mb-6 italic italic">Les dates des stages 2026 seront publiées prochainement. Restez connectés !</p>
+                    <a href="contact.html" class="btn-gold uppercase text-xs tracking-widest">Se renseigner</a>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2026 Sailing School. All rights reserved.</p>
-    </footer>
 </body>
 </html>
