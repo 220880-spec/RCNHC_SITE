@@ -6,29 +6,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="nav-rcnhc flex justify-between items-center px-10">
-        <div class="flex items-center gap-2"><span class="text-xl">👑</span><span class="font-royal text-yellow-500 font-bold">RCNHC</span></div>
-        <div class="flex gap-6"><a href="index.html">Accueil</a><a href="club.html">Le Club</a><a href="ecole.html" class="active">Ecole de Voile</a><a href="activites.html">Activités</a><a href="contact.html">Contacts</a></div>
+<body class="bg-slate-50 font-['Inter']">
+    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
+        <div class="flex items-center space-x-2">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_3.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
+            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs font-semibold italic">RCNHC</h1>
+        </div>
+        <div class="flex gap-6">
+            <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
+            <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
+            <a href="ecole.html" class="text-yellow-500 border-b border-yellow-500 pb-1 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
+            <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
+            <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
+            <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
+            <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
+            <a href="contact.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
+        </div>
     </nav>
-
-    <main class="container mx-auto px-6 py-16 text-center max-w-4xl">
-        <div class="card-royal p-12">
-            <h2 class="text-3xl font-royal text-[#002349] mb-8">INITIATION À LA VOILE</h2>
-            <p class="text-slate-600 mb-8 leading-relaxed">
-                Le club propose chaque été des stages de voile dans le cadre de l'opération <strong>"Vive le Sport"</strong>, en collaboration avec la commune de Wanze.
-            </p>
-            <div class="grid md:grid-cols-2 gap-8 text-left text-sm mb-8">
+    <main class="container mx-auto px-6 py-20 text-center max-w-4xl">
+        <div class="bg-white rounded-3xl shadow-xl border-t-8 border-yellow-600 p-12">
+            <div class="text-5xl mb-6">⛵</div>
+            <h2 class="text-3xl font-royal text-[#002349] mb-4">Stages de Voile</h2>
+            <p class="text-slate-600 leading-relaxed mb-8 italic">Le RCNHC organise des stages d'initiation et de perfectionnement pour les jeunes de 7 à 16 ans dans le cadre de l'opération "Vive le Sport", en collaboration avec la commune de Wanze. Encadrement professionnel et sécurité garantie sur Optimist et dériveurs légers.</p>
+            <div class="grid md:grid-cols-2 gap-8 text-left text-sm">
                 <div class="bg-blue-50 p-6 rounded-2xl">
-                    <h4 class="font-bold text-[#002349] mb-2 uppercase">Public</h4>
-                    <p>Jeunes filles et garçons de 7 à 16 ans.</p>
+                    <h4 class="font-bold text-[#002349] mb-2 uppercase text-xs font-semibold italic">Public</h4>
+                    <p>Jeunes de 7 à 16 ans.</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-2xl">
-                    <h4 class="font-bold text-[#002349] mb-2 uppercase">Encadrement</h4>
-                    <p>Moniteurs brevetés (FFYB) et initiation sur Optimist ou dériveurs.</p>
+                    <h4 class="font-bold text-[#002349] mb-2 uppercase text-xs font-semibold italic">Inscriptions</h4>
+                    <p>Contacter le secrétariat.</p>
                 </div>
             </div>
-            <p class="text-xs text-slate-400 font-bold">CONTACTER LE SECRÉTARIAT POUR LES MODALITÉS D'INSCRIPTION</p>
         </div>
     </main>
 </body>
