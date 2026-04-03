@@ -6,26 +6,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="nav-rcnhc flex justify-between items-center px-10">
-        <div class="flex items-center gap-2"><span class="text-xl">👑</span><span class="font-royal text-yellow-500 font-bold">RCNHC</span></div>
-        <div class="flex gap-6"><a href="index.html">Accueil</a><a href="club.html">Le Club</a><a href="ecole.html">Ecole de Voile</a><a href="activites.html">Activités</a><a href="contact.html" class="active">Contacts</a></div>
+<body class="bg-slate-50 font-['Inter']">
+    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30 flex justify-between items-center px-10">
+        <div class="flex items-center space-x-2">
+            <img src="https://raw.githubusercontent.com/220880-spec/RCNHC_SITE/main/image_3.png" alt="Logo RCNHC" class="h-10 w-10 rounded-full border border-yellow-500">
+            <h1 class="font-royal text-yellow-500 font-bold uppercase tracking-widest text-xs font-semibold italic">RCNHC</h1>
+        </div>
+        <div class="flex gap-6">
+            <a href="index.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Accueil</a>
+            <a href="club.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Le Club</a>
+            <a href="ecole.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Ecole de Voile</a>
+            <a href="activites.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Activités</a>
+            <a href="news.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">News</a>
+            <a href="agenda.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Agenda</a>
+            <a href="album.html" class="hover:text-yellow-500 text-[11px] font-semibold tracking-widest uppercase">Photos</a>
+            <a href="contact.html" class="text-yellow-500 border-b border-yellow-500 pb-1 text-[11px] font-semibold tracking-widest uppercase font-bold">Contacts</a>
+        </div>
     </nav>
-
-    <main class="container mx-auto px-6 py-16 max-w-3xl">
-        <div class="card-royal text-center">
-            <h2 class="text-3xl font-royal text-[#002349] mb-8 uppercase">COORDONNÉES</h2>
+    <main class="container mx-auto px-6 py-20 text-center max-w-3xl">
+        <div class="bg-white rounded-3xl shadow-xl border-t-8 border-yellow-600 p-12">
+            <h2 class="text-3xl font-royal text-[#002349] mb-8 uppercase tracking-widest">Coordonnées</h2>
             <div class="space-y-6">
                 <div>
-                    <h4 class="font-bold text-yellow-600 uppercase text-xs">Adresse du Port</h4>
+                    <h4 class="font-bold text-yellow-600 uppercase text-xs font-semibold italic">Adresse du Port</h4>
                     <p class="text-lg">Rue Alphonse Libert<br>4520 WANZE</p>
                 </div>
-                <div class="pt-6 border-t">
-                    <h4 class="font-bold text-yellow-600 uppercase text-xs">Courriel</h4>
+                <div class="pt-6 border-t border-slate-100">
+                    <h4 class="font-bold text-yellow-600 uppercase text-xs font-semibold italic">Courriel</h4>
                     <a href="mailto:info@rcnhcwanze.be" class="text-xl font-bold text-[#002349]">info@rcnhcwanze.be</a>
                 </div>
-                <div class="pt-6 border-t bg-slate-50 p-4 rounded-xl">
-                    <h4 class="font-bold text-yellow-600 uppercase text-xs mb-2">Permanences</h4>
+                <div class="pt-6 border-t border-slate-100 bg-slate-50 p-4 rounded-xl">
+                    <h4 class="font-bold text-yellow-600 uppercase text-xs font-semibold italic mb-2">Permanences</h4>
                     <p class="text-sm">Chaque dimanche de 10h00 à 18h00 (en saison de navigation).</p>
                 </div>
             </div>
