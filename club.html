@@ -2,33 +2,36 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCNHC - Ecole de Voile</title>
+    <title>RCNHC - Le Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="nav-rcnhc flex justify-between items-center px-10">
         <div class="flex items-center gap-2"><span class="text-xl">👑</span><span class="font-royal text-yellow-500 font-bold">RCNHC</span></div>
-        <div class="flex gap-6"><a href="index.html">Accueil</a><a href="club.html">Le Club</a><a href="ecole.html" class="active">Ecole de Voile</a><a href="activites.html">Activités</a><a href="contact.html">Contacts</a></div>
+        <div class="flex gap-6"><a href="index.html">Accueil</a><a href="club.html" class="active">Le Club</a><a href="ecole.html">Ecole de Voile</a><a href="activites.html">Activités</a><a href="contact.html">Contacts</a></div>
     </nav>
 
-    <main class="container mx-auto px-6 py-16 text-center max-w-4xl">
-        <div class="card-royal p-12">
-            <h2 class="text-3xl font-royal text-[#002349] mb-8">INITIATION À LA VOILE</h2>
-            <p class="text-slate-600 mb-8 leading-relaxed">
-                Le club propose chaque été des stages de voile dans le cadre de l'opération <strong>"Vive le Sport"</strong>, en collaboration avec la commune de Wanze.
-            </p>
-            <div class="grid md:grid-cols-2 gap-8 text-left text-sm mb-8">
-                <div class="bg-blue-50 p-6 rounded-2xl">
-                    <h4 class="font-bold text-[#002349] mb-2 uppercase">Public</h4>
-                    <p>Jeunes filles et garçons de 7 à 16 ans.</p>
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12">
+            <section class="card-royal text-left">
+                <h2 class="text-2xl font-royal text-[#002349] mb-6">PRÉSENTATION</h2>
+                <p class="text-sm text-slate-600 mb-4">Le Royal Centre Nautique Hesbaye-Condroz est une association sans but lucratif (A.S.B.L.).</p>
+                <p class="text-sm text-slate-600 mb-6">Le club est géré par un organe d'administration composé de membres bénévoles. L'admission de nouveaux membres se fait sur présentation et parrainage, après approbation du comité.</p>
+                <div class="bg-slate-50 p-4 border-l-4 border-yellow-500 text-xs italic">
+                    "Une ambiance familiale pour tous les amoureux de la Meuse."
                 </div>
-                <div class="bg-blue-50 p-6 rounded-2xl">
-                    <h4 class="font-bold text-[#002349] mb-2 uppercase">Encadrement</h4>
-                    <p>Moniteurs brevetés (FFYB) et initiation sur Optimist ou dériveurs.</p>
+            </section>
+
+            <section class="card-royal text-left">
+                <h2 class="text-2xl font-royal text-[#002349] mb-6">ADMINISTRATION</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between border-b pb-2"><span class="text-xs font-bold uppercase">Président</span><span class="font-semibold">M. Jacques DUMONT</span></div>
+                    <div class="flex justify-between border-b pb-2"><span class="text-xs font-bold uppercase">Vice-Président</span><span class="font-semibold">M. Marc LALOUX</span></div>
+                    <div class="flex justify-between border-b pb-2"><span class="text-xs font-bold uppercase">Secrétaire</span><span class="font-semibold">M. Pierre VAN HECKE</span></div>
+                    <div class="flex justify-between border-b pb-2"><span class="text-xs font-bold uppercase">Trésorier</span><span class="font-semibold">M. Michel LECLERCQ</span></div>
                 </div>
-            </div>
-            <p class="text-xs text-slate-400 font-bold">CONTACTER LE SECRÉTARIAT POUR LES MODALITÉS D'INSCRIPTION</p>
+            </section>
         </div>
     </main>
 </body>
