@@ -1,64 +1,42 @@
-/* TYPOGRAPHIE & BASES */
-.font-royal { font-family: 'Playfair Display', serif; }
-body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
-
-/* NAVIGATION */
-.nav-link { 
-    font-size: 11px; 
-    font-weight: 600; 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    transition: 0.3s; 
-    color: white; 
+/* Empêche le menu de s'étaler horizontalement */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.nav-link:hover { color: #EAB308; }
-
-/* MENU DÉROULANT (DROPDOWN) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #002349;
-    min-width: 220px;
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
-    z-index: 100;
+    min-width: 250px; /* Largeur fixe pour éviter l'étalement */
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    z-index: 1000; /* Assure que le menu passe devant tout */
     border: 1px solid rgba(234, 179, 8, 0.2);
     border-top: 4px solid #EAB308;
-    top: 100%;
+    top: 100%; /* Se place juste en dessous du texte "Le Club" */
     left: 0;
+    flex-direction: column; /* Force l'alignement vertical */
 }
 
+/* Affiche le menu au survol */
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex; /* Utilise flex pour empiler les liens */
 }
 
 .dropdown-item {
     display: block;
-    padding: 12px 20px;
+    width: 100%; /* Prend toute la largeur du menu */
+    padding: 15px 20px;
     color: white;
-    font-size: 10px;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.2s;
+    white-space: nowrap; /* Empêche le texte de revenir à la ligne */
+    text-align: left;
 }
 
 .dropdown-item:hover {
     background-color: #003366;
     color: #EAB308;
-    padding-left: 25px; /* Petit effet au survol */
-}
-
-/* CARTES ET BLOCS */
-.card-royal { 
-    background: white; 
-    border-radius: 20px; 
-    padding: 2.5rem; 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
-    border-top: 6px solid #EAB308; 
-}
-
-.price-tag { 
-    color: #002349; 
-    font-weight: 800; 
-    font-size: 2.5rem; 
 }
