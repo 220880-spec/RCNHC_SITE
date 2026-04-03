@@ -1,0 +1,17 @@
+{
+  "news": [
+    {
+      "date": "Avril 2026",
+      "titre": "Lancement de la saison",
+      "texte": "Le RCNHC est fier d'inaugurer sa nouvelle identité visuelle royale."
+    }
+  ],
+  "agenda": [
+    {
+      "date": "15",
+      "mois": "AVRIL",
+      "evenement": "Mise à l'eau officielle",
+      "info": "Ouverture du port et drink de bienvenue au club-house."
+    }
+  ]
+}
