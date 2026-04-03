@@ -5,135 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCNHC - Royal Centre Nautique Hesbaye Condroz</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>.font-royal { font-family: 'Playfair Display', serif; }</style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 font-['Inter']">
-    <!-- NAVIGATION -->
-    <nav class="bg-[#002349] text-white p-4 shadow-xl sticky top-0 z-50 border-b border-yellow-600/30">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center">
-            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-2xl">👑</span><h1 class="text-xl font-royal tracking-widest uppercase text-yellow-500 font-bold">RCNHC WANZE</h1></div>
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[10px] md:text-[11px] font-semibold tracking-widest uppercase">
-                <a href="index.html" class="text-yellow-500 border-b-2 border-yellow-500 pb-1">Accueil</a>
-                <a href="club.html" class="hover:text-yellow-500 transition pb-1">Le club</a>
-                <a href="ecole.html" class="hover:text-yellow-500 transition pb-1">Ecole de voile</a>
-                <a href="activites.html" class="hover:text-yellow-500 transition pb-1">Activités</a>
-                <a href="tarifs.html" class="hover:text-yellow-500 transition pb-1">Tarifs</a>
-                <a href="news.html" class="hover:text-yellow-500 transition pb-1">News</a>
-                <a href="agenda.html" class="hover:text-yellow-500 transition pb-1">Agenda</a>
-                <a href="album.html" class="hover:text-yellow-500 transition pb-1">Photos</a>
-                <a href="contact.html" class="hover:text-yellow-500 transition pb-1 font-bold">Contacts</a>
+<body>
+    <nav class="nav-rcnhc">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0"><span class="text-2xl">👑</span><h1 class="font-royal text-xl text-yellow-500 font-bold tracking-widest uppercase">RCNHC WANZE</h1></div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="club.html">Le club</a>
+                <a href="ecole.html">Ecole de voile</a>
+                <a href="activites.html">Activités</a>
+                <a href="news.html">News</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="album.html">Photos</a>
+                <a href="contact.html">Contacts</a>
             </div>
         </div>
     </nav>
-
-    <!-- HERO SECTION -->
-    <header class="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden">
-        <div class="absolute inset-0 bg-black/50 z-10"></div>
-        <img src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?auto=format&fit=crop&q=80&w=2000" class="absolute inset-0 w-full h-full object-cover" alt="Voile">
-        <div class="relative z-20 px-4">
-            <h2 class="text-5xl md:text-7xl font-royal mb-4">Royal Centre Nautique</h2>
-            <p class="text-xl text-yellow-500 uppercase tracking-[0.3em] font-bold">Hesbaye Condroz</p>
+    <header class="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1540946484627-41400263858f?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        <div class="relative z-10 px-4">
+            <h2 class="text-5xl md:text-7xl font-royal mb-4 italic">Royal Centre Nautique</h2>
+            <p class="text-xl text-yellow-500 uppercase tracking-[0.4em] font-bold">Hesbaye Condroz</p>
         </div>
     </header>
-
-    <!-- WELCOME SECTION -->
-    <section class="py-16 container mx-auto px-6 text-center">
-        <h3 class="text-3xl font-royal text-[#002349] mb-6 italic">"Le titre Royal au service de la passion nautique."</h3>
-        <p class="max-w-2xl mx-auto text-slate-600 leading-relaxed italic border-l-4 border-yellow-500 pl-6 text-left">
-            "Bienvenue au RCNHC. Notre club est un lieu de rencontre pour les passionnés de l'eau. Que vous soyez navigateur chevronné ou débutant, vous trouverez ici une ambiance conviviale au cœur de la Hesbaye."
-        </p>
+    <section class="py-20 container mx-auto px-6 text-center max-w-3xl">
+        <h3 class="text-3xl font-royal text-[#002349] mb-6 italic italic">"Le titre Royal au service de la passion nautique."</h3>
+        <p class="text-slate-600 leading-relaxed italic border-l-4 border-yellow-500 pl-6 text-left">Bienvenue sur le nouveau portail officiel du RCNHC. Situé à Wanze, notre club allie tradition maritime et convivialité hesbignonne.</p>
     </section>
-
-    <!-- ACTIVITÉS SECTION -->
-    <section class="bg-white py-16 border-t border-yellow-600/20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-royal text-center text-[#002349] mb-12 uppercase tracking-widest">Nos Activités</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 shadow-lg rounded-2xl p-6 hover:-translate-y-2 transition border-t-4 border-yellow-600">
-                    <span class="text-4xl">⛵</span>
-                    <h4 class="font-bold my-4 text-[#002349] text-lg">Voile légère</h4>
-                    <p class="text-sm text-slate-600">Entraînements le dimanche pour dériveurs et catamarans.</p>
-                </div>
-                <div class="bg-slate-50 shadow-lg rounded-2xl p-6 hover:-translate-y-2 transition border-t-4 border-yellow-600">
-                    <span class="text-4xl">🚤</span>
-                    <h4 class="font-bold my-4 text-[#002349] text-lg">Motonautisme</h4>
-                    <p class="text-sm text-slate-600">Accès aux pontons et randonnées fluviales.</p>
-                </div>
-                <div class="bg-slate-50 shadow-lg rounded-2xl p-6 hover:-translate-y-2 transition border-t-4 border-yellow-600">
-                    <span class="text-4xl">⚙️</span>
-                    <h4 class="font-bold my-4 text-[#002349] text-lg">Hangar & Entretien</h4>
-                    <p class="text-sm text-slate-600">Stockage sécurisé pour les embarcations des membres.</p>
-                </div>
-            </div>
-            <div class="text-center mt-10">
-                <a href="activites.html" class="bg-[#002349] text-white px-8 py-3 rounded-lg font-bold uppercase hover:bg-yellow-600 transition">Découvrir toutes les activités →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- TARIFS SECTION -->
-    <section class="py-16 container mx-auto px-6">
-        <h2 class="text-3xl font-royal text-center text-[#002349] mb-12 uppercase tracking-widest">Tarifs & Adhésion</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 text-center hover:border-yellow-600 transition shadow-xl">
-                <h3 class="font-royal text-xl mb-4">Individuel</h3>
-                <p class="text-4xl font-bold text-[#002349] mb-6">70€<span class="text-sm text-slate-400">/an</span></p>
-                <ul class="text-slate-500 text-sm space-y-3 mb-8">
-                    <li>✓ Assurance FFYB</li>
-                    <li>✓ Accès infrastructures</li>
-                </ul>
-                <a href="contact.html" class="block bg-[#002349] text-white py-2 rounded font-bold uppercase text-xs tracking-widest hover:bg-yellow-600 transition">S'inscrire</a>
-            </div>
-            <div class="bg-[#002349] border-4 border-yellow-600 rounded-2xl p-8 text-center scale-105 shadow-2xl text-white">
-                <div class="bg-yellow-600 text-[#002349] px-4 py-1 rounded-full inline-block mb-4 font-bold text-xs">⭐ MEILLEUR CHOIX</div>
-                <h3 class="font-royal text-xl mb-4 text-yellow-500">Famille</h3>
-                <p class="text-4xl font-bold mb-6">110€<span class="text-sm opacity-50">/an</span></p>
-                <ul class="text-slate-300 text-sm space-y-3 mb-8">
-                    <li>✓ 2 Adultes + Enfants</li>
-                    <li>✓ Assurances incluses</li>
-                </ul>
-                <a href="contact.html" class="block bg-yellow-600 text-white py-2 rounded font-bold uppercase text-xs tracking-widest hover:bg-yellow-700 transition">Le choix Royal</a>
-            </div>
-            <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 text-center hover:border-yellow-600 transition shadow-xl">
-                <h3 class="font-royal text-xl mb-4">Junior (-25 ans)</h3>
-                <p class="text-4xl font-bold text-[#002349] mb-6">40€<span class="text-sm text-slate-400">/an</span></p>
-                <ul class="text-slate-500 text-sm space-y-3 mb-8">
-                    <li>✓ Tarif réduit</li>
-                    <li>✓ Accès complet</li>
-                </ul>
-                <a href="contact.html" class="block bg-[#002349] text-white py-2 rounded font-bold uppercase text-xs tracking-widest hover:bg-yellow-600 transition">S'inscrire</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="bg-white py-16 border-t border-yellow-600/20">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-3xl font-royal text-center text-[#002349] mb-12 uppercase tracking-widest">Nous Contacter</h2>
-            <div class="bg-gradient-to-r from-[#002349] to-[#003366] text-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
-                <div class="p-10 md:w-1/2">
-                    <h3 class="text-2xl font-royal text-yellow-500 mb-6">Localisation</h3>
-                    <p class="text-sm leading-loose">📍 Rue Alphonse Libert<br>4520 Wanze, Belgique</p>
-                    <p class="mt-8 text-xs font-bold uppercase text-yellow-500 tracking-widest">⏰ Permanence Dimanche</p>
-                    <p class="text-sm opacity-80">10h00 - 18h00</p>
-                </div>
-                <div class="p-10 md:w-1/2 bg-[#002349]">
-                    <h3 class="text-2xl font-royal text-yellow-500 mb-6">Contact Direct</h3>
-                    <p class="text-sm text-slate-300 mb-6">Une question ? Un amarrage ?</p>
-                    <a href="mailto:info@rcnhcwanze.be" class="text-xl font-bold text-yellow-400 hover:text-yellow-300 transition underline">✉️ info@rcnhcwanze.be</a>
-                    <div class="mt-8">
-                        <a href="contact.html" class="text-sm text-yellow-400 hover:text-yellow-300 font-semibold">Voir tous les détails →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-[#002349] text-slate-400 py-10 text-center border-t border-yellow-600/20">
-        <p class="text-xs tracking-widest uppercase">© 2026 Royal Centre Nautique Hesbaye Condroz - Wanze</p>
-        <p class="text-xs mt-2">👑 Un club passionné par la navigation</p>
-    </footer>
 </body>
 </html>
